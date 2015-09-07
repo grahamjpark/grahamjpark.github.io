@@ -44,6 +44,7 @@
 .profiles {
     background-color: #f7f7f7;
     border-top: 1px solid #dbdbdb;
+    height: 320px;
 }
 
 .profiles h2 {
