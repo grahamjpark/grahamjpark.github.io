@@ -38,6 +38,10 @@
   font-size: 14
 }
 
+.aboutme img {
+  padding: 0px;
+}
+
 .jumbotron p {
   font-size: 20px;
   color: #fff;
