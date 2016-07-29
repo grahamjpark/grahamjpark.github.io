@@ -1,7 +1,5 @@
-html, body {
+body {
     overflow-x:hidden;
-    height: 100%;
-    overflow: hidden;
 }
 
 .nav a {
@@ -77,60 +75,19 @@ html, body {
 }
 
 .profiles {
-  background-color: #f7f7f7;
-  border-top: 1px solid #dbdbdb;
+    background-color: #f7f7f7;
+    border-top: 1px solid #dbdbdb;
 }
 
 .profiles h2 {
-  color: #393c3d;
-  font-size: 34px;
-  text-align: center;
+    color: #393c3d;
+    font-size: 34px;
+    text-align: center;
 }
 
 .profiles p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  margin-top: 0px;
-  text-align: center;
-}
-
-
-
-
-.resources {
-  /*padding-bottom: 250px;*/
-  text-align: center;
-  height:100%;
-}
-
-iframe {
-  width:1000px;
-  height:800px;
-}
-.site-footer {
-  /*margin-top: -250px;*/ /* negative value of footer height */
-  background-color: #f7f7f7;
-  border-top: 1px solid #dbdbdb;
-}
-
-/*.resources:after {
-  content: "";
-  display: block;
-}
-
-.site-footer, .resources:after {
-  height: 100px; 
-}*/
-
-.site-footer h2 {
-  color: #393c3d;
-  font-size: 34px;
-  text-align: center;
-}
-
-.site-footer p {
-  font-size: 14px;
-  margin-bottom: 15px;
-  margin-top: 0px;
-  text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    text-align: center;
 }
