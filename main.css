@@ -58,11 +58,13 @@ body {
   font-family: 'Lato', sans-serif;
   margin-bottom: -1px;
   margin-top: -7px;
+  white-space: pre
 }
 
 .profiles {
     background-color: #f7f7f7;
     border-top: 1px solid #dbdbdb;
+    padding-bottom: 30px
 }
 
 .profiles h2 {
