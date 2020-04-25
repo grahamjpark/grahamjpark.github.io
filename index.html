@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="main.css">
     <title>Graham Park</title>
     <link rel="icon" href="./favicon.ico" />
+    <script>window.sa_event=window.sa_event||function(){a=[].slice.call(arguments);sa_event.q?sa_event.q.push(a):sa_event.q=[a]};</script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+    <script>
+        (function createEvents() {
+          // Get all links on the page
+          var a = document.getElementsByTagName("a");
+
+          // Loop over all links on the page
+          for (var i = 0; i < a.length; i++) {
+            var link = a[i];
+
+            // Test is a link does start with http
+            if (/^http/i.test(link.href)) {
+
+              // Set event name with host of link without the www
+              var event = "outbound_" + link.host.replace(/^(www|l|m)\./, "");
+              link.setAttribute("target", "_blank");
+              link.setAttribute("onclick", "sa_event('" + event + "');");
+            }
+          }
+        })();
+        </script>
 
   </head>
 
@@ -65,7 +87,7 @@
                 </center>
         </div>
     </div>
-    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/app.js"></script>
-    <noscript><img src="https://park.grahamjpark.com/image.gif" alt=""></noscript>
+    <!-- <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/app.js"></script>
+    <noscript><img src="https://park.grahamjpark.com/image.gif" alt=""></noscript> -->
   </body>
 </html>
