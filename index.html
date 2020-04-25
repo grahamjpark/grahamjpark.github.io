@@ -86,14 +86,11 @@
         (function createEvents() {
             // Get all links on the page
             var a = document.getElementsByTagName("a");
-            console.log("Len all a: " + a.length);
             // Loop over all links on the page
             for (var i = 0; i < a.length; i++) {
                 var link = a[i];
-                console.log("checking: " + link);
                 // Test is a link does start with http
                 if (/^http/i.test(link.href)) {
-                    console.log("In if: " + link);
                     // Set event name with host of link without the www
                     var event = "outbound_" + link.host.replace(/^(www|l|m)\./, "");
                     link.setAttribute("target", "_blank");
