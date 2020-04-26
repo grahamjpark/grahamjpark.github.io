@@ -2,88 +2,104 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-
-
-
-body {
-    overflow-x:hidden;
 }
 
-.nav a {
-  color: #5a5a5a;
-  font-size: 11px;
-  font-weight: bold;
-  padding: 14px 10px;
-  text-transform: uppercase;
+.menu-container {
+    color: #fff;
+    background-color: #5995DA;
+    /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
-.nav li {
-  display: inline;
+.menu {
+    /* border: 1px solid #fff; */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    /* border: 1px solid #fff; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.login {
+    margin-left: 20px;
+}
+
+.header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
-  height: 65px;
-  background-color: #f7f7f7;
-}
-.jumbotron {
-  background-color: #2852A6/*#555753*/;
-  height: 300px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  text-shadow: black 0.1em 0.1em 0.2em;
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.jumbotron .container {
-  position: relative;
-  top:0px;
+/* .social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+} */
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
 }
 
-.jumbotron h1 {
-  color: #fff;
-  font-size: 48px;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: bolder;
-  margin-top: -3px;
+.photo-grid {
+    width: 900px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
 }
 
-.aboutme {
-  margin-top: -30px;
+.photo-grid-item {
+    border: 1px solid #fff;
+    width: 300px;
+    height: 300px;
 }
 
-.aboutme p {
-  font-size: 14
+.first-item {
+    order: 1;
 }
 
-.aboutme img {
-  padding: 0px;
+.last-item {
+    order: -1;
 }
 
-.jumbotron p {
-  font-size: 20px;
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  margin-bottom: -1px;
-  margin-top: -7px;
-  white-space: pre
+.social,
+.subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
 }
 
-.profiles {
-    background-color: #f7f7f7;
-    border-top: 1px solid #dbdbdb;
-    padding-bottom: 30px
+.footer {
+    display: flex;
+    justify-content: space-between;
 }
 
-.profiles h2 {
-    color: #393c3d;
-    font-size: 34px;
-    text-align: center;
+.footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
 }
 
-.profiles p {
-    font-size: 14px;
-    margin-bottom: 15px;
-    margin-top: 0px;
-    text-align: center;
+.footer-one,
+.footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
 }
