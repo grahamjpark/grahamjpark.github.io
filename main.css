@@ -7,7 +7,6 @@
 .menu-container {
     color: #fff;
     background-color: #5995DA;
-    /* Blue */
     padding: 20px 0;
     display: flex;
     justify-content: center;
@@ -31,18 +30,21 @@
 }
 
 .header-container {
-    color: #5995DA;
-    background-color: #D6E9FE;
+    color: #ffffff;
+    background-color: #2852a6;
     display: flex;
     justify-content: center;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    height: 300px;
 }
 
 .header {
     width: 900px;
     height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 /* .social,
@@ -103,3 +105,7 @@
     flex: initial;
     width: 300px;
 }
+
+.signup {
+    margin-left: auto;
+  }
