@@ -6,7 +6,6 @@
 
 header {
     background-color: #2852A6;
-    position: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,9 +40,16 @@ header {
     text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
 }
 
+header ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 header li {
-    display: inline;
+    display: inline-flex;
     margin-right: 50px;
+    padding-bottom: 7px;
 }
 
 header li:last-of-type {
@@ -61,7 +67,30 @@ header a {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
 }
 
+.article-container{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
 article {
     display: flex;
-    z-index: 4;
+    width: 700px;
+    padding-top:30px;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+}
+
+article p {
+    padding-bottom: 10px;
+
+}
+
+article h1 {
+    padding-bottom: 5px;
+}
+
+
+article img{
+    display:inline-flex;
 }
