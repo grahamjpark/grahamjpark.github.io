@@ -8,7 +8,15 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Song+Myung">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Buenard">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Brawler">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro">
+    <link rel="icon" href="/favicon.ico" />
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
 </head>
 
 <body>
@@ -61,6 +69,19 @@
             </div>
         </article>
     </div>
+    <script>
+        (function createEvents() {
+            var a = document.getElementsByTagName("a");
+            for (var i = 0; i < a.length; i++) {
+                var link = a[i];
+                if (/^http/i.test(link.href)) {
+                    var event = "outbound_" + link.host.replace(/^(www|l|m)\./, "");
+                    link.setAttribute("target", "_blank");
+                    link.setAttribute("onclick", "sa_event('" + event + "');");
+                }
+            }
+        })();
+    </script>
 </body>
 
 </html>

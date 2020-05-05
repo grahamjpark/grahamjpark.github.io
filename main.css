@@ -82,6 +82,8 @@ article {
     font-family: 'Buenard', serif;
     font-style: normal;
     font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-size: 18px;
     width: 800px;
     padding: 30px 20px 30px 20px;
@@ -98,7 +100,7 @@ article h1 {
 
 article img{
     float: right;
-    margin: 5px 10px 10px 17px;
+    margin: 5px 15px 10px 15px;
 }
 
 hr {
