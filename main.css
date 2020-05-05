@@ -74,27 +74,20 @@ header a {
 }
 
 article {
-    display: flex;
     width: 800px;
     padding-top:30px;
-    color: #242729;
-    /* flex-wrap: wrap; */
-    /* justify-content: center; */
+    color: #32383d;
 }
 
 article p {
-    padding: 10px 0 10px 0;
+    padding-top: 15px;
 }
 
 article h1 {
     padding-bottom: 5px;
 }
 
-/* .about-me {
-    float:left;
-} */
-
 article img{
-    /* display:inline-flex; */
     float: right;
+    margin: 5px 10px 0 17px;
 }
