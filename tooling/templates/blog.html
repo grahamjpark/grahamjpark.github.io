@@ -24,23 +24,11 @@
 </head>
 
 <body>
-    <header>
-        <div class="emblem">
-            <img class="logo" title="" src="/assets/gp_small_new.png" height="47" width="51">
-            <h1>Graham Park</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href='index.html'>About</a></li>
-                <li><a href='all_posts.html'>All Posts</a></li>
-                <li><a href='rss_info.html'>Subscribe</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include 'header.html' %}
     <div class="article-container">
         <article>
             <h1 class="title">{{ title }}</h1>
-            <!-- Fill in post metadata -->
+            <p class='subtitle'>Published on {{ date }}</p>
             {% macro populateBody(post_body) %}{{ post_body }}{% endmacro %}
             {{ populateBody(post_body)|indent(12) }}
         </article>

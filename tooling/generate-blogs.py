@@ -6,10 +6,10 @@ import jinja2
 from bs4 import BeautifulSoup
 
 # Functionality to implement:
-# - Parse all markdown files and create individual pages
+# - Parse all markdown files and create individual pages - done
 # - Create page that has all blog posts
-# - Populate home page with most recent posts
 # - Update rss feed
+# - Populate home page with most recent posts
 
 
 def get_write_metadata(file_name, title, html):
@@ -59,4 +59,5 @@ for file in os.listdir(markdown_dir):
     metadata = get_write_metadata(file_name, title, html)
 
     with open('../blog/' + metadata['filename'], 'w') as f:
-        f.write(blog_template.render(title=title, post_body=html))
+        f.write(blog_template.render(title=title, post_body=html,
+                                     date=time.strftime('%B %d, %Y', time.localtime(metadata["date"]))))

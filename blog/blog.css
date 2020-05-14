@@ -95,7 +95,7 @@ article p {
 }
 
 article h1:first-of-type {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 0 0;
     font-size: 50px;
 }
 
@@ -103,6 +103,12 @@ article img {
     width: 100%;
     object-fit: contain;
     margin: 5px auto 10px auto;
+}
+
+.subtitle {
+    font-size: 9;
+    font-style: italic;
+    padding: 0 0 20px 10px;
 }
 
 hr {
