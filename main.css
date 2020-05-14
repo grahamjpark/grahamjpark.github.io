@@ -53,13 +53,13 @@ header li {
     padding-bottom: 7px;
 }
 
-header li:first-of-type {
+/* header li:first-of-type {
     margin-left: 0;
 }
 
 header li:last-of-type {
     margin-right: 0;
-}
+} */
 
 header a {
     font-family: 'Buenard', serif;
