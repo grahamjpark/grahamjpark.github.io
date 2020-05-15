@@ -106,9 +106,9 @@ article img {
 }
 
 .subtitle {
-    font-size: 9;
-    font-style: italic;
-    padding: 0 0 20px 10px;
+    font-size: 14px;
+    /* font-style: italic; */
+    padding: 0 0 20px 0;
 }
 
 hr {

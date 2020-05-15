@@ -11,11 +11,13 @@ from bs4 import BeautifulSoup
 # - Update rss feed
 # - Populate home page with most recent posts
 
+post_metadatas = []
 
 def get_write_metadata(file_name, title, html):
     metadata_filepath = 'post-metadata/' + file_name + '.json'
     metadata = {
-        'date': int(time.time()),
+        'raw_date': int(time.time()),
+        'date': time.strftime('%B %d, %Y', time.localtime(time.time())),
         'filename': file_name + '.html',
         'title': title,
         'snippet': BeautifulSoup(html, "lxml").text [:300]
@@ -28,11 +30,12 @@ def get_write_metadata(file_name, title, html):
             if metadata["title"] != title:
                 metadata["title"] = title
             else:
+                post_metadatas.append(metadata)
                 return metadata
 
     with open(metadata_filepath, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, ensure_ascii=False, indent=4)
-
+    post_metadatas.append(metadata)
     return metadata
 
 
@@ -47,7 +50,6 @@ template_loader = jinja2.FileSystemLoader(searchpath="./templates")
 template_env = jinja2.Environment(loader=template_loader)
 blog_template_file = "blog.html"
 blog_template = template_env.get_template(blog_template_file)
-output_text = blog_template.render()
 
 for file in os.listdir(markdown_dir):
     file_name = os.fsdecode(file)[:-3]
@@ -60,4 +62,12 @@ for file in os.listdir(markdown_dir):
 
     with open('../blog/' + metadata['filename'], 'w') as f:
         f.write(blog_template.render(title=title, post_body=html,
-                                     date=time.strftime('%B %d, %Y', time.localtime(metadata["date"]))))
+                                     date=metadata["date"]))
+
+metadata_dir = os.fsencode('post-metadata')
+all_posts_template_file = "all-posts.html"
+all_posts_template = template_env.get_template(all_posts_template_file)
+post_metadatas = sorted(post_metadatas, key=lambda post: -post["raw_date"])
+
+with open('../blog/all-posts.html', 'w') as f:
+    f.write(all_posts_template.render(posts=post_metadatas))
