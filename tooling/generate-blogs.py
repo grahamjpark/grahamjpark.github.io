@@ -3,13 +3,15 @@ import time
 import json
 import markdown
 import jinja2
+import datetime
 from bs4 import BeautifulSoup
+from rfeed import Item, Guid, Feed, Image
 
 # Functionality to implement:
 # - Parse all markdown files and create individual pages - done
-# - Create page that has all blog posts
-# - Update rss feed
-# - Populate home page with most recent posts
+# - Create page that has all blog posts - done
+# - Update rss feed - done
+# - Populate home page with most recent posts - done
 
 post_metadatas = []
 
@@ -45,6 +47,7 @@ def get_blog_html(blog_name):
         return markdown.markdown(text)
 
 
+################## Parse Markdown and create individual pages ##################
 markdown_dir = os.fsencode('raw-posts')
 template_loader = jinja2.FileSystemLoader(searchpath="./templates")
 template_env = jinja2.Environment(loader=template_loader)
@@ -64,10 +67,51 @@ for file in os.listdir(markdown_dir):
         f.write(blog_template.render(title=title, post_body=html,
                                      date=metadata["date"]))
 
-metadata_dir = os.fsencode('post-metadata')
+########################## Create catalog of all posts ###########################
 all_posts_template_file = "all-posts.html"
 all_posts_template = template_env.get_template(all_posts_template_file)
 post_metadatas = sorted(post_metadatas, key=lambda post: -post["raw_date"])
 
 with open('../blog/all-posts.html', 'w') as f:
     f.write(all_posts_template.render(posts=post_metadatas))
+
+######################### Update index with recent posts #########################
+index_template_file = "index.html"
+index_template = template_env.get_template(index_template_file)
+
+with open('../index.html', 'w') as f:
+    f.write(index_template.render(posts=post_metadatas[:3]))
+
+################################ Update rss feed #################################
+rss_items = []
+for post in post_metadatas:
+    url = f"https://grahamjpark.com/blog/{post['filename']}"
+    rss_items.append(
+        Item(
+            title = post["title"],
+            link = url,
+            description = post["snippet"] + "...",
+            author = "Graham Park",
+            guid = Guid(url),
+            pubDate = datetime.datetime.fromtimestamp(post["raw_date"])
+        )
+    )
+
+image = Image(
+    url = "https://grahamjpark.com/assets/gp_small_new.png",
+    title = "GP Logo",
+    link = "https://grahamjpark.com/blog/all-posts.html",
+)
+
+feed = Feed(
+    title = "Graham Park's Blog",
+    link = "https://grahamjpark.com/blog/rss.xml",
+    description = "Writings from Graham about whatever happens to be on his mind",
+    language = "en-US",
+    lastBuildDate = datetime.datetime.now(),
+    items = rss_items,
+    image = image
+)
+
+with open('../blog/rss.xml', 'w') as f:
+    f.write(feed.rss())
