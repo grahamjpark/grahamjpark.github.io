@@ -24,13 +24,13 @@
 </head>
 
 <body>
-    {% include 'header.html' %}
+    {% include 'header.html.jinja2' %}
     <div class="article-container">
         <article>
             <h1 class="title">All Posts</h1>
             {% for post in posts %}
                 {% with post=post %}
-                    {% include 'post_snippet.html'%}
+                    {% include 'post_snippet.html.jinja2'%}
                 {% endwith %}
             {% endfor %}
         </article>
