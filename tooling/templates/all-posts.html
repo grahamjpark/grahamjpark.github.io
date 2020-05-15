@@ -29,13 +29,9 @@
         <article>
             <h1 class="title">All Posts</h1>
             {% for post in posts %}
-            {% set filename = post["filename"] %}
-            <div onclick="location.href='/blog/{{ filename }}';" style="cursor: pointer;">
-                <h2>{{ post["title"] }}</h2>
-                <p>{{ post["snippet"][:240] }}...</p>
-                <p class='click-for-more'>click for more</p>
-                <p>{{ post["date"] }}</p>
-            </div>
+                {% with post=post %}
+                    {% include 'post_snippet.html'%}
+                {% endwith %}
             {% endfor %}
         </article>
     </div>
