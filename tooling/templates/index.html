@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Graham Park</title>
+    <link rel='stylesheet' href='main.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Song+Myung">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Buenard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="emblem">
+            <img class="logo" title="" src="./assets/gp_small_new.png" height="106" width="115">
+            <h1>Graham Park</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href='https://www.linkedin.com/in/grahamjpark/'>LinkedIn</a></li>
+                <li><a href='https://github.com/grahamjpark'>Github</a></li>
+                <li><a href='http://parkphotography.site/graham'>Photography</a></li>
+                <!-- <li><a
+                        href='http://getpocket.com/@b43TaA63g736ape341dd16ad19pUg607f23q6bX92df14cob049c0n36w8fqOc69'>Pocket</a>
+                </li> -->
+                <li><a href='https://bookshop.org/shop/graham'>Bookshelf</a></li>
+                <li><a href='https://medium.com/@gjpark'>Medium</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="article-container">
+        <article>
+            <div class="about-me">
+                <img title="" src="./assets/new_pro_pic_small.jpg" height="300" width="300">
+                <h1>About Me</h1>
+                <p>When considering my professional life, I think it boils down to three passions of mine:</p>
+                <p>
+                    <b>Software Engineering</b> - Software engineering is quickly reshaping the world around us
+                    in some amazing ways. It has also created new problems that we have to navigate. I love
+                    being able to use my knowledge to build things that improve lives and having conversations
+                    about the implications of technology.
+                </p>
+                <p>
+                    <b>Effective Altruism</b> - I have always been passionate about charity, but recent
+                    conversations in my religious and secular circles have brought light to how well-intentioned
+                    charities can be inefficient or even harmful. I think there's still a lot of potential for
+                    technology companies to aid this work.
+                </p>
+                <p>
+                    <b>Security</b> - Security is such a fascinating field to be in and it has a huge impact.
+                    When building security products, you're engaging in a cat and mouse style game to keep
+                    ahead of malicious parties. This brings about some exciting
+                    challenges and considerations.
+                </p>
+                <hr>
+                <p><em>For more on my professional life, check out my Linkedin above. Outside of my professional life,
+                    I've got some hobbies that come and go. You can check out my latest photography or see my book
+                    recommendations above as well.</em></p>
+            </div>
+            <div>
+                <h1 class="title">Recent Articles</h1>
+                {% for post in posts %}
+                    {% with post=post %}
+                        {% include 'post_snippet.html'%}
+                    {% endwith %}
+                {% endfor %}
+                <a href='/blog/all-posts.html'>All Posts</a>
+            </div>
+        </article>
+    </div>
+    <script>
+        (function createEvents() {
+            var a = document.getElementsByTagName("a");
+            for (var i = 0; i < a.length; i++) {
+                var link = a[i];
+                if (/^http/i.test(link.href)) {
+                    var event = "outbound_" + link.host.replace(/^(www|l|m)\./, "");
+                    link.setAttribute("target", "_blank");
+                    link.setAttribute("onclick", "sa_event('" + event + "');");
+                }
+            }
+        })();
+    </script>
+</body>
+
+</html>
