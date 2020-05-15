@@ -80,7 +80,7 @@ index_template_file = "index.html"
 index_template = template_env.get_template(index_template_file)
 
 with open('../index.html', 'w') as f:
-    f.write(index_template.render(posts=post_metadatas[:3]))
+    f.write(index_template.render(posts=post_metadatas[:2]))
 
 ################################ Update rss feed #################################
 rss_items = []

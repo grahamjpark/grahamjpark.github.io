@@ -1,7 +1,7 @@
         {% set filename = post["filename"] %}
-        <div onclick="location.href='/blog/{{ filename }}';" style="cursor: pointer;">
+        <a href='/blog/{{ filename }}'>
             <h2>{{ post["title"] }}</h2>
+            <p>{{ post["date"] }}</p>
             <p>{{ post["snippet"][:240] }}...</p>
             <p class='click-for-more'>click for more</p>
-            <p>{{ post["date"] }}</p>
-        </div>
+        </a>

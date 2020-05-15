@@ -31,7 +31,7 @@ header {
     font-family: 'Song Myung';
     font-style: normal;
     font-weight: normal;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
@@ -95,7 +95,7 @@ article p {
 }
 
 article h1:first-of-type {
-    padding: 40px 0 0 0;
+    /* padding: 30px 0 0 0; */
     font-size: 50px;
 }
 
@@ -106,7 +106,7 @@ article img {
 }
 
 .subtitle {
-    font-size: 14px;
+    font-size: 15px;
     /* font-style: italic; */
     padding: 0 0 20px 0;
 }
@@ -121,3 +121,26 @@ hr {
     border-width: 1px;
     width: 80%;
 }
+
+a {
+    color: inherit; /* blue colors for links too */
+    text-decoration: inherit; /* no underline */
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 605px) {
+    .emblem h1 {
+        display: none;
+    }
+    .logo {
+        margin-right: 0;
+    }
+}
+
+/* Desktop Styles */
+/* @media only screen and (min-width: 606px) {
+    article img {
+        float: right;
+        margin: 5px 15px 10px 15px;
+    }
+} */
