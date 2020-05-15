@@ -51,7 +51,7 @@ def get_blog_html(blog_name):
 markdown_dir = os.fsencode('raw-posts')
 template_loader = jinja2.FileSystemLoader(searchpath="./templates")
 template_env = jinja2.Environment(loader=template_loader)
-blog_template_file = "blog.html.jinja2"
+blog_template_file = "blog.jinja2.html"
 blog_template = template_env.get_template(blog_template_file)
 
 for file in os.listdir(markdown_dir):
@@ -71,7 +71,7 @@ for file in os.listdir(markdown_dir):
                                      date=metadata["date"]))
 
 ########################## Create catalog of all posts ###########################
-all_posts_template_file = "all-posts.html.jinja2"
+all_posts_template_file = "all-posts.jinja2.html"
 all_posts_template = template_env.get_template(all_posts_template_file)
 post_metadatas = sorted(post_metadatas, key=lambda post: -post["raw_date"])
 
@@ -79,7 +79,7 @@ with open('../blog/all-posts.html', 'w') as f:
     f.write(all_posts_template.render(posts=post_metadatas))
 
 ######################### Update index with recent posts #########################
-index_template_file = "index.html.jinja2"
+index_template_file = "index.jinja2.html"
 index_template = template_env.get_template(index_template_file)
 
 with open('../index.html', 'w') as f:

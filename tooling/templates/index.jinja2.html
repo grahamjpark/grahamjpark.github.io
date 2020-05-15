@@ -75,7 +75,7 @@
                 <h1 onclick="location.href='/blog/all-posts.html';" style="cursor: pointer;">Recent Articles</h1>
                 {% for post in posts %}
                     {% with post=post %}
-                        {% include 'post_snippet.html.jinja2'%}
+                        {% include 'post_snippet.jinja2.html'%}
                     {% endwith %}
                 {% endfor %}
                 <a href='/blog/all-posts.html'>All Posts</a>
