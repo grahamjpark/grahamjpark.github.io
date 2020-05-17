@@ -36,11 +36,21 @@
     </div>
     <script>
         (function createEvents() {
+            var outbound_links = {}
             var a = document.getElementsByTagName("article")[0].getElementsByTagName("a");
             for (var i = 0; i < a.length; i++) {
                 var link = a[i];
                 if (/^http/i.test(link.href)) {
-                    var event = "outbound_" + link.host.replace(/^(www|l|m)\./, "");
+                    let title = "{{ title }}".replace(/\s/g, '').toLowerCase();
+                    let host = link.host.replace(/^(www|l|m)\./, "");
+                    let count = 0;
+                    if (host in outbound_links) {
+                        outbound_links[host] += 1;
+                        count = outbound_links[host];
+                    } else {
+                        outbound_links[host] = 0;
+                    }
+                    var event = "outbound_" + title + "_" + host + "_" + count;
                     link.setAttribute("target", "_blank");
                     link.setAttribute("onclick", "sa_event('" + event + "');");
                 }
