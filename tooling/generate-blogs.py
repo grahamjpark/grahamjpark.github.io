@@ -118,3 +118,9 @@ feed = Feed(
 
 with open('../blog/rss.xml', 'w') as f:
     f.write(feed.rss())
+
+############################# Re-render static pages #############################
+subscribe_template_file = "subscribe.jinja2.html"
+subscribe_template = template_env.get_template(subscribe_template_file)
+with open('../blog/subscribe.html', 'w') as f:
+    f.write(subscribe_template.render())

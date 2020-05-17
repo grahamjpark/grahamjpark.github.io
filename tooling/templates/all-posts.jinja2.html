@@ -4,7 +4,9 @@
 <head>
     <meta charset='UTF-8' />
     <title>Graham Park</title>
-    <link rel='stylesheet' href='blog.css' />
+    <link rel='stylesheet' href='page.css' />
+    <link rel='stylesheet' href='all-posts.css' />
+    <link rel='stylesheet' href='post-snippet.css' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Song+Myung">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Buenard">
@@ -35,19 +37,6 @@
             {% endfor %}
         </article>
     </div>
-    <script>
-        (function createEvents() {
-            var a = document.getElementsByTagName("article")[0].getElementsByTagName("a");
-            for (var i = 0; i < a.length; i++) {
-                var link = a[i];
-                if (/^http/i.test(link.href)) {
-                    var event = "outbound_" + link.host.replace(/^(www|l|m)\./, "");
-                    link.setAttribute("target", "_blank");
-                    link.setAttribute("onclick", "sa_event('" + event + "');");
-                }
-            }
-        })();
-    </script>
 </body>
 
 </html>

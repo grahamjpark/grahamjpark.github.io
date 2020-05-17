@@ -5,6 +5,7 @@
     <meta charset='UTF-8' />
     <title>Graham Park</title>
     <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='/blog/post-snippet.css' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Song+Myung">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Buenard">
@@ -78,7 +79,7 @@
                 {% include 'post_snippet.jinja2.html'%}
                 {% endwith %}
                 {% endfor %}
-                <a href='/blog/all-posts.html'>All Posts</a>
+                <a class="all-posts" href='/blog/all-posts.html'>All Posts →</a>
             </div>
         </article>
     </div>

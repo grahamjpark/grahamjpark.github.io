@@ -116,8 +116,15 @@ hr {
 }
 
 .recent-articles a {
-    color: inherit; /* blue colors for links too */
-    text-decoration: inherit; /* no underline */
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.recent-articles .all-posts {
+    color: #3d7c99;
+    display: flex;
+    justify-content: center;
+    font-size: 22px;
 }
 
 /* Mobile Styles */
