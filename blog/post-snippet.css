@@ -1,0 +1,13 @@
+.snippet-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.post-date {
+    padding-left: 10px;
+}
+
+.link {
+    color: #3d7c99;
+}
