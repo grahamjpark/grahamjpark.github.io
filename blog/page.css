@@ -7,10 +7,9 @@
 header {
     background-color: #2852A6;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    height: 305px;
+    height: 80px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -19,38 +18,38 @@ header {
 .emblem {
     /* border: 1px solid red; */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 45px;
-    padding-bottom: 35px;
+    padding: 35px 20px 35px 35px;
+    justify-content: space-around;
 }
 
 .logo {
-    margin-bottom: 5px;
+    margin-right: 20px;
 }
 
 .emblem h1 {
     font-family: 'Song Myung';
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 28px;
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 header ul {
+    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: baseline;
 }
 
 header li {
     display: inline-flex;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-bottom: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* header li:first-of-type {
@@ -69,7 +68,7 @@ header a {
     text-align: center;
     text-decoration-line: underline;
     color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .article-container {
@@ -95,34 +94,43 @@ article p {
     font-family: 'PT Sans', serif;
 }
 
-article h1 {
-    padding-bottom: 10px;
+article h1:first-of-type {
+    /* padding: 30px 0 0 0; */
+    font-size: 50px;
+}
+
+article h1:not(first-of-type) {
+    padding: 10px 0 2px 0;
+}
+
+article img {
+    width: 100%;
+    object-fit: contain;
+    margin: 5px auto 10px auto;
 }
 
 hr {
     display: block;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 10px auto 10px auto;
     border-style: inset;
     border-width: 1px;
     width: 80%;
 }
 
 /* Mobile Styles */
-@media only screen and (max-width: 555px) {
-    article img {
-        width: 100%;
-        object-fit: contain;
-        margin: 5px auto 10px auto;
+@media only screen and (max-width: 605px) {
+    .emblem h1 {
+        display: none;
+    }
+    .logo {
+        margin-right: 0;
     }
 }
 
 /* Desktop Styles */
-@media only screen and (min-width: 556px) {
+/* @media only screen and (min-width: 606px) {
     article img {
         float: right;
         margin: 5px 15px 10px 15px;
     }
-}
+} */

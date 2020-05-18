@@ -76,21 +76,11 @@
             </div>
             <div class="recent-articles">
                 <h1 onclick="location.href='/blog/all-posts.html';" style="cursor: pointer;">Recent Articles</h1>
-                
-                
-                        
-        <div class="snippet-header">
-            <a href='/blog/security-suggestions.html'>
-                <h2>My security suggestions</h2>
-            </a>
-            <p class="post-date">December 29, 2018</p>
-        </div>
-        <p>I find myself recommending things to my friends a lot (sometimes it’s even because they asked me for my recommendations!), and I get a lot of enjoyment out of recommending things I love. So I decided I wanted create a series of posts about ...</p>
-        <a href='/blog/security-suggestions.html'>
-            <p class='link'>Read More →</p>
-        </a>
-                
-                
+                {% for post in posts %}
+                {% with post=post %}
+                {% include 'post_snippet.jinja2.html'%}
+                {% endwith %}
+                {% endfor %}
                 <a class="all-posts" href='/blog/all-posts.html'>All Posts →</a>
             </div>
         </article>

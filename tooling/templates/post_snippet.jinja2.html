@@ -1,0 +1,11 @@
+        {% set filename = post["filename"] %}
+        <div class="snippet-header">
+            <a href='/blog/{{ filename }}'>
+                <h2>{{ post["title"] }}</h2>
+            </a>
+            <p class="post-date">{{ post["date"] }}</p>
+        </div>
+        <p>{{ post["snippet"][:240] }}...</p>
+        <a href='/blog/{{ filename }}'>
+            <p class='link'>Read More →</p>
+        </a>

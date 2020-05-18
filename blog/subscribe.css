@@ -1,0 +1,13 @@
+.rss-url {
+    text-align: center;
+    font-size: 16px;
+}
+
+.email-signup {
+    width: 300px;
+    margin: 0 auto 0 auto;
+}
+
+.email-octopus-form-row-subscribe {
+    align-items: right;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Graham Park</title>
+    <link rel='stylesheet' href='page.css' />
+    <link rel='stylesheet' href='all-posts.css' />
+    <link rel='stylesheet' href='post-snippet.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Song+Myung">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Buenard">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+</head>
+
+<body>
+    {% include 'header.jinja2.html' %}
+    <div class="article-container">
+        <article>
+            <h1 class="title">All Posts</h1>
+            {% for post in posts %}
+                {% with post=post %}
+                    {% include 'post_snippet.jinja2.html'%}
+                {% endwith %}
+            {% endfor %}
+        </article>
+    </div>
+</body>
+
+</html>
