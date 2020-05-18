@@ -1,9 +1,10 @@
 .rss-url {
     text-align: center;
+    font-size: 16px;
 }
 
 .email-signup {
-    width: 400px;
+    width: 300px;
     margin: 0 auto 0 auto;
 }
 
