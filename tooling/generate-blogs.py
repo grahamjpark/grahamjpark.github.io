@@ -32,19 +32,20 @@ def get_write_metadata(file_name, title, html):
             if metadata["title"] != title:
                 metadata["title"] = title
             else:
-                post_metadatas.append(metadata)
                 return metadata
 
     with open(metadata_filepath, 'w', encoding='utf-8') as f:
         json.dump(metadata, f, ensure_ascii=False, indent=4)
-    post_metadatas.append(metadata)
     return metadata
 
 
-def get_blog_html(blog_name):
-    with open("raw-posts/" + blog_name + ".md", "r", encoding="utf-8") as input_file:
+def parse_markdown(file_name):
+    with open("raw-posts/" + file_name + ".md", "r", encoding="utf-8") as input_file:
         text = input_file.read()
-        return markdown.markdown(text)
+        full_html = markdown.markdown(text)
+        [title, html] = full_html.split('\n', 1)
+        title = title[4:-5]
+        return title, html
 
 
 ################## Parse Markdown and create individual pages ##################
@@ -60,11 +61,10 @@ for file in os.listdir(markdown_dir):
 
     file_name = os.fsdecode(file)[:-3]
 
-    html = get_blog_html(file_name)
-    [title, html] = html.split('\n', 1)
-    title = title[4:-5]
+    title, html = parse_markdown(file_name)
 
     metadata = get_write_metadata(file_name, title, html)
+    post_metadatas.append(metadata)
 
     with open('../blog/' + metadata['filename'], 'w') as f:
         f.write(blog_template.render(title=title, post_body=html,
