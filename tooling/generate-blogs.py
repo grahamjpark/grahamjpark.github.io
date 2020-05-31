@@ -13,24 +13,27 @@ from rfeed import Item, Guid, Feed, Image
 # - Update rss feed - done
 # - Populate home page with most recent posts - done
 
+SNIPPET_LEN = 300
 post_metadatas = []
 
 def get_write_metadata(file_name, title, html):
     metadata_filepath = 'raw-posts/' + file_name + '.json'
+    snippet = BeautifulSoup(html, "lxml").text[1:SNIPPET_LEN].replace('\n', ' ')
     metadata = {
         'raw_date': int(time.time()),
         'date': time.strftime('%B %d, %Y', time.localtime(time.time())),
         'filename': file_name + '.html',
         'title': title,
-        'snippet': BeautifulSoup(html, "lxml").text [:300]
+        'snippet': snippet
     }
 
     if os.path.isfile(metadata_filepath):
         with open(metadata_filepath, 'r') as f:
             metadata = json.loads(f.read())
-            # If this happens, the title in the markdown has been updated, so update metadata
-            if metadata["title"] != title:
+            # If this happens, the markdown has been updated
+            if metadata["title"] != title or metadata["snippet"] != snippet:
                 metadata["title"] = title
+                metadata["snippet"] = snippet
             else:
                 return metadata
 
