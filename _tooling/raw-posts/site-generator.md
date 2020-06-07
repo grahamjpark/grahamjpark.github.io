@@ -231,5 +231,4 @@ I’ve tossed around the idea of including commenting. Services exist that manag
 
 # Thanks for reading
 
-If you’ve made it all the way here, thanks! This is my first right up like this and I’m still trying to figure out how to convey my process to people who might hope to learn from it. If you have any feedback feel free to let me know!
-
+If you’ve made it all the way here, thanks! This is my first write up like this and I’m still trying to figure out how to convey my process to people who might hope to learn from it. If you have any feedback feel free to let me know!
