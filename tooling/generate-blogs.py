@@ -18,7 +18,7 @@ post_metadatas = []
 
 def get_write_metadata(file_name, title, html):
     metadata_filepath = 'raw-posts/' + file_name + '.json'
-    snippet = BeautifulSoup(html, "lxml").text[1:SNIPPET_LEN].replace('\n', ' ')
+    snippet = BeautifulSoup(html, "lxml").text[0:SNIPPET_LEN].replace('\n', ' ').strip()
     metadata = {
         'raw_date': int(time.time()),
         'date': time.strftime('%B %d, %Y', time.localtime(time.time())),

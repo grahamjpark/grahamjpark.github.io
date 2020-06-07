@@ -8,3 +8,16 @@ article li {
     margin: 0 10px 10px 30px;
     font-family: 'PT Sans', serif;
 }
+
+pre code {
+    margin: 10px 0 10px 0;
+}
+
+/* pre code {
+    background-color: #eee;
+    border: 1px solid #999;
+    display: block;
+    padding: 20px;
+    width: 100%;
+    white-space: pre-wrap;
+  } */
