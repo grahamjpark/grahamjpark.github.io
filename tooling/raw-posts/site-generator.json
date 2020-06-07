@@ -1,0 +1,7 @@
+{
+    "raw_date": 1591557336,
+    "date": "June 07, 2020",
+    "filename": "site-generator.html",
+    "title": "Creating a Static Blog Generator",
+    "snippet": "Recently I went about revamping my website. After creating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job. A quick note: there isn’t anything novel about a static site generato"
+}
