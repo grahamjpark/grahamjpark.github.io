@@ -78,6 +78,7 @@ header a {
 }
 
 article {
+    overflow: auto;
     font-family: 'Buenard', serif;
     font-style: normal;
     font-weight: normal;
