@@ -3,11 +3,10 @@
 ![](https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
 
 
-Recently I went about revamping my website. After creating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job.
+Recently I went about revamping my personal site. After recreating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job. I'm not going to list every detail, but you can all the code [here](https://github.com/grahamjpark/grahamjpark.github.io/tree/master/tooling).
+
 
 A quick note: there isn’t anything novel about a static site generator. A [simple search](https://duckduckgo.com/?q=best+static+site+generator) turns up plenty of options that are mature and feature-packed. However, I had the desire to write my own, so that’s what I chose to do. If you’re looking to not roll your own, those existing options have great documentation or tutorials you can find.
-
-Also, this post is to share my approach rather than give a step-by-step. I’ll explain the general process and include some code snippets, but if you’re taking the time to write your own generator, the process of writing it is probably your main driver, so copying and pasting things would defeat the purpose. To see the complete project you can look [here](https://github.com/grahamjpark/grahamjpark.github.io/tree/master/tooling).
 
 # Existing Site
 
@@ -18,7 +17,7 @@ I think it’s worth mentioning that coming into this I already had a landing pa
 To start I needed to outline the behavior I wanted my site to have. For me, it boiled down to:
 
 - Generating new posts from markdown (which is how my notes program exports notes)
-- Creating a page with all posts
+- Creating a page that lists all posts
 - Having recent posts listed on my homepage
 - Publishing an RSS feed people can subscribe to
 # Generating Posts
@@ -26,7 +25,7 @@ To start I needed to outline the behavior I wanted my site to have. For me, it b
 #### Parsing Markdown
 The first step I took was making sure there was an easy way to generate the HTML from my markdown files. I looked around for a solution and found python’s [markdown library](https://python-markdown.github.io/reference/) which made it a lot easier than I was expecting. A call to  `markdown.markdown(text)` was all I needed to generate the HTML.
 
-After playing around with the markdown library in the REPL to verify it’s output, I created a function for generating the HTML. The function opens up and reads the markdown file, then populates the HTML with the markdown library. I also chose to split the title of the post from the rest of the content by splitting on the first newline character.
+I wrapped this in a function which opens up and reads the markdown file, then populates the HTML. I also chose to split the title of the post from the rest of the content to store in the metadata.
 
     def parse_markdown(file_name):
         with open("raw-posts/" + file_name + ".md", "r", encoding="utf-8") as input_file:
@@ -39,7 +38,7 @@ After playing around with the markdown library in the REPL to verify it’s outp
 #### Metadata
 With the HTML content created, I had to tackle generating some metadata about the posts. In particular, I want to make sure to have the date the post was published and a preview of the post I can show. I considered embedding this information at the top of the file, but it seemed cleaner to keep a separate metadata JSON file. As I write more posts this might get a little more chaotic, but for now, I like not muddling the two in one file.
 
-To get the clean text I use [Beautiful Soup](https://pypi.org/project/beautifulsoup4/).  Beautiful Soup is great for parsing and traversing HTML in python. I don’t need to do anything crazy, just get the raw text without any HTML elements. After passing in the HTML to Beautiful soup I could get this from `.text`. I clean the snippet up a little bit more by removing the newline characters and removing spaces at the beginning and end.
+To get the clean text I use [Beautiful Soup](https://pypi.org/project/beautifulsoup4/). Beautiful Soup is great for parsing and traversing HTML in python. I don’t need to do anything crazy, just get the raw text without any HTML elements. After passing in the HTML to Beautiful soup I could get this from `.text`. I clean the snippet up a little bit more by removing the newline characters and removing spaces at the beginning and end.
 
     snippet = BeautifulSoup(html, "lxml").text[0:SNIPPET_LEN]
     snippet = snippet.replace('\n', ' ').strip()
