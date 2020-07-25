@@ -47,23 +47,22 @@
             <h1 class="title">Creating a Static Blog Generator</h1>
             <p class='subtitle'>Published on June 07, 2020</p>
             <p><img alt="" src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1000&amp;q=80" /></p>
-<p>Recently I went about revamping my website. After creating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job.</p>
+<p>Recently I went about revamping my personal site. After recreating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job. I'm not going to list every detail, but you can all the code <a href="https://github.com/grahamjpark/grahamjpark.github.io/tree/master/tooling">here</a>.</p>
 <p>A quick note: there isn’t anything novel about a static site generator. A <a href="https://duckduckgo.com/?q=best+static+site+generator">simple search</a> turns up plenty of options that are mature and feature-packed. However, I had the desire to write my own, so that’s what I chose to do. If you’re looking to not roll your own, those existing options have great documentation or tutorials you can find.</p>
-<p>Also, this post is to share my approach rather than give a step-by-step. I’ll explain the general process and include some code snippets, but if you’re taking the time to write your own generator, the process of writing it is probably your main driver, so copying and pasting things would defeat the purpose. To see the complete project you can look <a href="https://github.com/grahamjpark/grahamjpark.github.io/tree/master/tooling">here</a>.</p>
 <h1>Existing Site</h1>
 <p>I think it’s worth mentioning that coming into this I already had a landing page for my site which is hosted on Github pages. I followed the <a href="https://www.internetingishard.com/">Interneting Is Hard tutorials</a> to brush up on my HTML/CSS and <a href="https://pages.github.com/">Github pages’ site</a> to figure out how to get it hosted for free.</p>
 <h1>Requirements</h1>
 <p>To start I needed to outline the behavior I wanted my site to have. For me, it boiled down to:</p>
 <ul>
 <li>Generating new posts from markdown (which is how my notes program exports notes)</li>
-<li>Creating a page with all posts</li>
+<li>Creating a page that lists all posts</li>
 <li>Having recent posts listed on my homepage</li>
 <li>Publishing an RSS feed people can subscribe to</li>
 </ul>
 <h1>Generating Posts</h1>
 <h4>Parsing Markdown</h4>
 <p>The first step I took was making sure there was an easy way to generate the HTML from my markdown files. I looked around for a solution and found python’s <a href="https://python-markdown.github.io/reference/">markdown library</a> which made it a lot easier than I was expecting. A call to  <code>markdown.markdown(text)</code> was all I needed to generate the HTML.</p>
-<p>After playing around with the markdown library in the REPL to verify it’s output, I created a function for generating the HTML. The function opens up and reads the markdown file, then populates the HTML with the markdown library. I also chose to split the title of the post from the rest of the content by splitting on the first newline character.</p>
+<p>I wrapped this in a function which opens up and reads the markdown file, then populates the HTML. I also chose to split the title of the post from the rest of the content to store in the metadata.</p>
 <pre><code>def parse_markdown(file_name):
     with open("raw-posts/" + file_name + ".md", "r", encoding="utf-8") as input_file:
         text = input_file.read()
@@ -74,7 +73,7 @@
 </code></pre>
 <h4>Metadata</h4>
 <p>With the HTML content created, I had to tackle generating some metadata about the posts. In particular, I want to make sure to have the date the post was published and a preview of the post I can show. I considered embedding this information at the top of the file, but it seemed cleaner to keep a separate metadata JSON file. As I write more posts this might get a little more chaotic, but for now, I like not muddling the two in one file.</p>
-<p>To get the clean text I use <a href="https://pypi.org/project/beautifulsoup4/">Beautiful Soup</a>.  Beautiful Soup is great for parsing and traversing HTML in python. I don’t need to do anything crazy, just get the raw text without any HTML elements. After passing in the HTML to Beautiful soup I could get this from <code>.text</code>. I clean the snippet up a little bit more by removing the newline characters and removing spaces at the beginning and end.</p>
+<p>To get the clean text I use <a href="https://pypi.org/project/beautifulsoup4/">Beautiful Soup</a>. Beautiful Soup is great for parsing and traversing HTML in python. I don’t need to do anything crazy, just get the raw text without any HTML elements. After passing in the HTML to Beautiful soup I could get this from <code>.text</code>. I clean the snippet up a little bit more by removing the newline characters and removing spaces at the beginning and end.</p>
 <pre><code>snippet = BeautifulSoup(html, "lxml").text[0:SNIPPET_LEN]
 snippet = snippet.replace('\n', ' ').strip()
 </code></pre>
