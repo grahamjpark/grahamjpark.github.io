@@ -84,9 +84,13 @@ with open('../blog/all-posts.html', 'w') as f:
 ######################### Update index with recent posts #########################
 index_template_file = "index.jinja2.html"
 index_template = template_env.get_template(index_template_file)
+thoughts = []
+
+with open('./thoughts/thoughts.json') as json_file:
+    thoughts = json.load(json_file)
 
 with open('../index.html', 'w') as f:
-    f.write(index_template.render(posts=post_metadatas[:2]))
+    f.write(index_template.render(posts=post_metadatas[:2], thoughts=thoughts[:2]))
 
 ################################ Update rss feed #################################
 rss_items = []

@@ -83,6 +83,15 @@
                 {% endfor %}
                 <a class="all-posts" href='/blog/all-posts.html'>All Posts →</a>
             </div>
+            <div class="recent-thoughts">
+                <h1 onclick="location.href='/blog/all-posts.html';" style="cursor: pointer;">Recent Thoughts</h1>
+                {% for thought in thoughts %}
+                {% with thought=thought %}
+                {% include 'thought.jinja2.html'%}
+                {% endwith %}
+                {% endfor %}
+                <a class="all-posts" href='/thoughts.html'>All Thoughts →</a>
+            </div>
         </article>
     </div>
 </body>
