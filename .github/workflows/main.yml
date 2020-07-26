@@ -31,7 +31,7 @@ jobs:
         TWITTER_TOKEN: ${{ secrets.TWITTER_TOKEN }}
       run: |-
         python ./_tooling/populate_tweets.py
-        cat ./_tooling/tweets.md
+        cat ./_tooling/tweets.json
         python ./_tooling/generate-blogs.py
     - name: Commit and push if changed
       run: |-
@@ -39,5 +39,5 @@ jobs:
         git config --global user.email "twitter-bot@example.com"
         git config --global user.name "Twitter-bot"
         git add -A
-        git commit -m "Updated content" || exit 0
+        git commit -m "New tweets" || exit 0
         git push
