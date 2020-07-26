@@ -83,6 +83,13 @@
                 {% endfor %}
                 <a class="all-posts" href='/blog/all-posts.html'>All Posts →</a>
             </div>
+            <div class="recent-tweets">
+                <h1>Recent Tweets</h1>
+                {% for tweet in tweets %}
+                <p>{{ tweet["text"] }}</p>
+                {% endfor %}
+                <a class="all-tweets" href='https://twitter.com/grahamjpark'>All Posts →</a>
+            </div>
         </article>
     </div>
 </body>

@@ -1,0 +1,788 @@
+[
+    {
+        "created_at": "Sun Jul 26 19:09:57 +0000 2020",
+        "id": 1287465196550848512,
+        "id_str": "1287465196550848512",
+        "text": "RT @oliviakrauth: \u201cThis is a violent city; it has been a violent city.\u201d \u2014 a national reporter who apparently hasn\u2019t covered the bulk of the\u2026",
+        "truncated": false,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "oliviakrauth",
+                    "name": "Olivia Krauth",
+                    "id": 357036849,
+                    "id_str": "357036849",
+                    "indices": [
+                        3,
+                        16
+                    ]
+                }
+            ],
+            "urls": []
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 371839953,
+            "id_str": "371839953",
+            "name": "Graham Park",
+            "screen_name": "grahamjpark",
+            "location": "",
+            "description": "I like interesting articles and podcasts, trying out new apps, and bad jokes. This is my space to share all of that.",
+            "url": "https://t.co/IftMp8Gw6a",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/IftMp8Gw6a",
+                            "expanded_url": "http://grahamjpark.com",
+                            "display_url": "grahamjpark.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 127,
+            "friends_count": 393,
+            "listed_count": 0,
+            "created_at": "Sun Sep 11 16:28:25 +0000 2011",
+            "favourites_count": 2588,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 568,
+            "lang": null,
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/371839953/1521912543",
+            "profile_link_color": "1B95E0",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "000000",
+            "profile_text_color": "000000",
+            "profile_use_background_image": false,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null,
+            "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "retweeted_status": {
+            "created_at": "Sun Jul 26 03:26:03 +0000 2020",
+            "id": 1287227657621561344,
+            "id_str": "1287227657621561344",
+            "text": "\u201cThis is a violent city; it has been a violent city.\u201d \u2014 a national reporter who apparently hasn\u2019t covered the bulk\u2026 https://t.co/hnKicKGleW",
+            "truncated": true,
+            "entities": {
+                "hashtags": [],
+                "symbols": [],
+                "user_mentions": [],
+                "urls": [
+                    {
+                        "url": "https://t.co/hnKicKGleW",
+                        "expanded_url": "https://twitter.com/i/web/status/1287227657621561344",
+                        "display_url": "twitter.com/i/web/status/1\u2026",
+                        "indices": [
+                            116,
+                            139
+                        ]
+                    }
+                ]
+            },
+            "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+            "in_reply_to_status_id": null,
+            "in_reply_to_status_id_str": null,
+            "in_reply_to_user_id": null,
+            "in_reply_to_user_id_str": null,
+            "in_reply_to_screen_name": null,
+            "user": {
+                "id": 357036849,
+                "id_str": "357036849",
+                "name": "Olivia Krauth",
+                "screen_name": "oliviakrauth",
+                "location": "Louisville, KY",
+                "description": "Education reporter @courierjournal | Quoted in the dictionary | DMs open/okrauth@gannett.com",
+                "url": "https://t.co/POXhPfdvPQ",
+                "entities": {
+                    "url": {
+                        "urls": [
+                            {
+                                "url": "https://t.co/POXhPfdvPQ",
+                                "expanded_url": "http://oliviakrauth.com",
+                                "display_url": "oliviakrauth.com",
+                                "indices": [
+                                    0,
+                                    23
+                                ]
+                            }
+                        ]
+                    },
+                    "description": {
+                        "urls": []
+                    }
+                },
+                "protected": false,
+                "followers_count": 7684,
+                "friends_count": 1250,
+                "listed_count": 160,
+                "created_at": "Wed Aug 17 19:04:00 +0000 2011",
+                "favourites_count": 20450,
+                "utc_offset": null,
+                "time_zone": null,
+                "geo_enabled": true,
+                "verified": true,
+                "statuses_count": 27654,
+                "lang": null,
+                "contributors_enabled": false,
+                "is_translator": false,
+                "is_translation_enabled": false,
+                "profile_background_color": "300B43",
+                "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+                "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+                "profile_background_tile": true,
+                "profile_image_url": "http://pbs.twimg.com/profile_images/1163460899518107648/c6CYnnwN_normal.jpg",
+                "profile_image_url_https": "https://pbs.twimg.com/profile_images/1163460899518107648/c6CYnnwN_normal.jpg",
+                "profile_banner_url": "https://pbs.twimg.com/profile_banners/357036849/1591320796",
+                "profile_link_color": "ABB8C2",
+                "profile_sidebar_border_color": "D8C4A0",
+                "profile_sidebar_fill_color": "B38071",
+                "profile_text_color": "BF5164",
+                "profile_use_background_image": true,
+                "has_extended_profile": true,
+                "default_profile": false,
+                "default_profile_image": false,
+                "following": null,
+                "follow_request_sent": null,
+                "notifications": null,
+                "translator_type": "none"
+            },
+            "geo": null,
+            "coordinates": null,
+            "place": null,
+            "contributors": null,
+            "is_quote_status": true,
+            "quoted_status_id": 1287223735276072960,
+            "quoted_status_id_str": "1287223735276072960",
+            "quoted_status": {
+                "created_at": "Sun Jul 26 03:10:28 +0000 2020",
+                "id": 1287223735276072960,
+                "id_str": "1287223735276072960",
+                "text": "This is actually fake news. This is why local news matters https://t.co/YZZlHcHedj",
+                "truncated": false,
+                "entities": {
+                    "hashtags": [],
+                    "symbols": [],
+                    "user_mentions": [],
+                    "urls": [
+                        {
+                            "url": "https://t.co/YZZlHcHedj",
+                            "expanded_url": "https://twitter.com/whas11paulina/status/1287203772503072768",
+                            "display_url": "twitter.com/whas11paulina/\u2026",
+                            "indices": [
+                                59,
+                                82
+                            ]
+                        }
+                    ]
+                },
+                "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+                "in_reply_to_status_id": null,
+                "in_reply_to_status_id_str": null,
+                "in_reply_to_user_id": null,
+                "in_reply_to_user_id_str": null,
+                "in_reply_to_screen_name": null,
+                "user": {
+                    "id": 607636030,
+                    "id_str": "607636030",
+                    "name": "Dyuce Woodson",
+                    "screen_name": "DyuceWLKY",
+                    "location": "Louisville, KY",
+                    "description": "Sports reporter for @WLKY | @UOSojc '17 | Portland with some Philly and Las Vegas seasoning",
+                    "url": "https://t.co/hkXSesUIxW",
+                    "entities": {
+                        "url": {
+                            "urls": [
+                                {
+                                    "url": "https://t.co/hkXSesUIxW",
+                                    "expanded_url": "https://www.facebook.com/DyuceWoodsonWLKY",
+                                    "display_url": "facebook.com/DyuceWoodsonWL\u2026",
+                                    "indices": [
+                                        0,
+                                        23
+                                    ]
+                                }
+                            ]
+                        },
+                        "description": {
+                            "urls": []
+                        }
+                    },
+                    "protected": false,
+                    "followers_count": 1465,
+                    "friends_count": 1155,
+                    "listed_count": 20,
+                    "created_at": "Wed Jun 13 23:09:35 +0000 2012",
+                    "favourites_count": 52266,
+                    "utc_offset": null,
+                    "time_zone": null,
+                    "geo_enabled": true,
+                    "verified": false,
+                    "statuses_count": 21983,
+                    "lang": null,
+                    "contributors_enabled": false,
+                    "is_translator": false,
+                    "is_translation_enabled": false,
+                    "profile_background_color": "131516",
+                    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png",
+                    "profile_background_tile": false,
+                    "profile_image_url": "http://pbs.twimg.com/profile_images/1207061964083601410/Tf50QZGN_normal.jpg",
+                    "profile_image_url_https": "https://pbs.twimg.com/profile_images/1207061964083601410/Tf50QZGN_normal.jpg",
+                    "profile_banner_url": "https://pbs.twimg.com/profile_banners/607636030/1585868191",
+                    "profile_link_color": "050505",
+                    "profile_sidebar_border_color": "FFFFFF",
+                    "profile_sidebar_fill_color": "DDEEF6",
+                    "profile_text_color": "333333",
+                    "profile_use_background_image": true,
+                    "has_extended_profile": true,
+                    "default_profile": false,
+                    "default_profile_image": false,
+                    "following": null,
+                    "follow_request_sent": null,
+                    "notifications": null,
+                    "translator_type": "none"
+                },
+                "geo": null,
+                "coordinates": null,
+                "place": {
+                    "id": "095534ad3107e0e6",
+                    "url": "https://api.twitter.com/1.1/geo/id/095534ad3107e0e6.json",
+                    "place_type": "city",
+                    "name": "Louisville",
+                    "full_name": "Louisville, KY",
+                    "country_code": "US",
+                    "country": "United States",
+                    "contained_within": [],
+                    "bounding_box": {
+                        "type": "Polygon",
+                        "coordinates": [
+                            [
+                                [
+                                    -85.847503,
+                                    38.108678
+                                ],
+                                [
+                                    -85.597188,
+                                    38.108678
+                                ],
+                                [
+                                    -85.597188,
+                                    38.282432
+                                ],
+                                [
+                                    -85.847503,
+                                    38.282432
+                                ]
+                            ]
+                        ]
+                    },
+                    "attributes": {}
+                },
+                "contributors": null,
+                "is_quote_status": true,
+                "quoted_status_id": 1287203772503072768,
+                "quoted_status_id_str": "1287203772503072768",
+                "retweet_count": 16,
+                "favorite_count": 85,
+                "favorited": false,
+                "retweeted": false,
+                "possibly_sensitive": false,
+                "lang": "en"
+            },
+            "retweet_count": 60,
+            "favorite_count": 327,
+            "favorited": false,
+            "retweeted": false,
+            "possibly_sensitive": false,
+            "lang": "en"
+        },
+        "is_quote_status": true,
+        "quoted_status_id": 1287223735276072960,
+        "quoted_status_id_str": "1287223735276072960",
+        "retweet_count": 60,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Sun Jul 26 01:50:19 +0000 2020",
+        "id": 1287203564650213378,
+        "id_str": "1287203564650213378",
+        "text": "If you\u2019re still using google for search, stop. Use @DuckDuckGo if you want to support privacy or @Ecosia if you wan\u2026 https://t.co/owSr9i0k4U",
+        "truncated": true,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "DuckDuckGo",
+                    "name": "DuckDuckGo",
+                    "id": 14504859,
+                    "id_str": "14504859",
+                    "indices": [
+                        51,
+                        62
+                    ]
+                },
+                {
+                    "screen_name": "Ecosia",
+                    "name": "Ecosia",
+                    "id": 92239108,
+                    "id_str": "92239108",
+                    "indices": [
+                        97,
+                        104
+                    ]
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://t.co/owSr9i0k4U",
+                    "expanded_url": "https://twitter.com/i/web/status/1287203564650213378",
+                    "display_url": "twitter.com/i/web/status/1\u2026",
+                    "indices": [
+                        117,
+                        140
+                    ]
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 371839953,
+            "id_str": "371839953",
+            "name": "Graham Park",
+            "screen_name": "grahamjpark",
+            "location": "",
+            "description": "I like interesting articles and podcasts, trying out new apps, and bad jokes. This is my space to share all of that.",
+            "url": "https://t.co/IftMp8Gw6a",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/IftMp8Gw6a",
+                            "expanded_url": "http://grahamjpark.com",
+                            "display_url": "grahamjpark.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 127,
+            "friends_count": 393,
+            "listed_count": 0,
+            "created_at": "Sun Sep 11 16:28:25 +0000 2011",
+            "favourites_count": 2588,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 568,
+            "lang": null,
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/371839953/1521912543",
+            "profile_link_color": "1B95E0",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "000000",
+            "profile_text_color": "000000",
+            "profile_use_background_image": false,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null,
+            "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jul 24 18:54:49 +0000 2020",
+        "id": 1286736611737243648,
+        "id_str": "1286736611737243648",
+        "text": "@jay_hankins I was recently listening to a @PessimistsArc about people resisting the telegram. Complaints about how\u2026 https://t.co/oIdLP15zde",
+        "truncated": true,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [
+                {
+                    "screen_name": "jay_hankins",
+                    "name": "Jay Hankins",
+                    "id": 8710162,
+                    "id_str": "8710162",
+                    "indices": [
+                        0,
+                        12
+                    ]
+                },
+                {
+                    "screen_name": "PessimistsArc",
+                    "name": "Pessimists Archive",
+                    "id": 3942597494,
+                    "id_str": "3942597494",
+                    "indices": [
+                        43,
+                        57
+                    ]
+                }
+            ],
+            "urls": [
+                {
+                    "url": "https://t.co/oIdLP15zde",
+                    "expanded_url": "https://twitter.com/i/web/status/1286736611737243648",
+                    "display_url": "twitter.com/i/web/status/1\u2026",
+                    "indices": [
+                        117,
+                        140
+                    ]
+                }
+            ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": 1286666425722122242,
+        "in_reply_to_status_id_str": "1286666425722122242",
+        "in_reply_to_user_id": 8710162,
+        "in_reply_to_user_id_str": "8710162",
+        "in_reply_to_screen_name": "jay_hankins",
+        "user": {
+            "id": 371839953,
+            "id_str": "371839953",
+            "name": "Graham Park",
+            "screen_name": "grahamjpark",
+            "location": "",
+            "description": "I like interesting articles and podcasts, trying out new apps, and bad jokes. This is my space to share all of that.",
+            "url": "https://t.co/IftMp8Gw6a",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/IftMp8Gw6a",
+                            "expanded_url": "http://grahamjpark.com",
+                            "display_url": "grahamjpark.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 127,
+            "friends_count": 393,
+            "listed_count": 0,
+            "created_at": "Sun Sep 11 16:28:25 +0000 2011",
+            "favourites_count": 2588,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 568,
+            "lang": null,
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/371839953/1521912543",
+            "profile_link_color": "1B95E0",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "000000",
+            "profile_text_color": "000000",
+            "profile_use_background_image": false,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null,
+            "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Fri Jul 24 18:50:28 +0000 2020",
+        "id": 1286735518441639940,
+        "id_str": "1286735518441639940",
+        "text": "I feel like this hits a little too close to home lately. I was able to get through more books earlier in the year w\u2026 https://t.co/7zzgPfh7WK",
+        "truncated": true,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/7zzgPfh7WK",
+                    "expanded_url": "https://twitter.com/i/web/status/1286735518441639940",
+                    "display_url": "twitter.com/i/web/status/1\u2026",
+                    "indices": [
+                        117,
+                        140
+                    ]
+                }
+            ]
+        },
+        "source": "<a href=\"https://mobile.twitter.com\" rel=\"nofollow\">Twitter Web App</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 371839953,
+            "id_str": "371839953",
+            "name": "Graham Park",
+            "screen_name": "grahamjpark",
+            "location": "",
+            "description": "I like interesting articles and podcasts, trying out new apps, and bad jokes. This is my space to share all of that.",
+            "url": "https://t.co/IftMp8Gw6a",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/IftMp8Gw6a",
+                            "expanded_url": "http://grahamjpark.com",
+                            "display_url": "grahamjpark.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 127,
+            "friends_count": 393,
+            "listed_count": 0,
+            "created_at": "Sun Sep 11 16:28:25 +0000 2011",
+            "favourites_count": 2588,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 568,
+            "lang": null,
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/371839953/1521912543",
+            "profile_link_color": "1B95E0",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "000000",
+            "profile_text_color": "000000",
+            "profile_use_background_image": false,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null,
+            "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 0,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    },
+    {
+        "created_at": "Thu Jul 23 16:13:47 +0000 2020",
+        "id": 1286333697277534210,
+        "id_str": "1286333697277534210",
+        "text": "I\u2019ve officially been at Virtual Peaker for over a month now. I can\u2019t wait to see what things are ahead for myself a\u2026 https://t.co/VUKHYgfeIQ",
+        "truncated": true,
+        "entities": {
+            "hashtags": [],
+            "symbols": [],
+            "user_mentions": [],
+            "urls": [
+                {
+                    "url": "https://t.co/VUKHYgfeIQ",
+                    "expanded_url": "https://twitter.com/i/web/status/1286333697277534210",
+                    "display_url": "twitter.com/i/web/status/1\u2026",
+                    "indices": [
+                        117,
+                        140
+                    ]
+                }
+            ]
+        },
+        "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+        "in_reply_to_status_id": null,
+        "in_reply_to_status_id_str": null,
+        "in_reply_to_user_id": null,
+        "in_reply_to_user_id_str": null,
+        "in_reply_to_screen_name": null,
+        "user": {
+            "id": 371839953,
+            "id_str": "371839953",
+            "name": "Graham Park",
+            "screen_name": "grahamjpark",
+            "location": "",
+            "description": "I like interesting articles and podcasts, trying out new apps, and bad jokes. This is my space to share all of that.",
+            "url": "https://t.co/IftMp8Gw6a",
+            "entities": {
+                "url": {
+                    "urls": [
+                        {
+                            "url": "https://t.co/IftMp8Gw6a",
+                            "expanded_url": "http://grahamjpark.com",
+                            "display_url": "grahamjpark.com",
+                            "indices": [
+                                0,
+                                23
+                            ]
+                        }
+                    ]
+                },
+                "description": {
+                    "urls": []
+                }
+            },
+            "protected": false,
+            "followers_count": 127,
+            "friends_count": 393,
+            "listed_count": 0,
+            "created_at": "Sun Sep 11 16:28:25 +0000 2011",
+            "favourites_count": 2588,
+            "utc_offset": null,
+            "time_zone": null,
+            "geo_enabled": false,
+            "verified": false,
+            "statuses_count": 568,
+            "lang": null,
+            "contributors_enabled": false,
+            "is_translator": false,
+            "is_translation_enabled": false,
+            "profile_background_color": "000000",
+            "profile_background_image_url": "http://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme14/bg.gif",
+            "profile_background_tile": false,
+            "profile_image_url": "http://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_image_url_https": "https://pbs.twimg.com/profile_images/982458035527303168/B5uLwxYc_normal.jpg",
+            "profile_banner_url": "https://pbs.twimg.com/profile_banners/371839953/1521912543",
+            "profile_link_color": "1B95E0",
+            "profile_sidebar_border_color": "000000",
+            "profile_sidebar_fill_color": "000000",
+            "profile_text_color": "000000",
+            "profile_use_background_image": false,
+            "has_extended_profile": false,
+            "default_profile": false,
+            "default_profile_image": false,
+            "following": null,
+            "follow_request_sent": null,
+            "notifications": null,
+            "translator_type": "none"
+        },
+        "geo": null,
+        "coordinates": null,
+        "place": null,
+        "contributors": null,
+        "is_quote_status": false,
+        "retweet_count": 0,
+        "favorite_count": 1,
+        "favorited": false,
+        "retweeted": false,
+        "possibly_sensitive": false,
+        "lang": "en"
+    }
+]
