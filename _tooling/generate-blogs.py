@@ -86,7 +86,7 @@ index_template_file = "index.jinja2.html"
 index_template = template_env.get_template(index_template_file)
 
 with open('../index.html', 'w') as f:
-    f.write(index_template.render(posts=post_metadatas[:2]))
+    f.write(index_template.render(posts=post_metadatas[:3]))
 
 ################################ Update rss feed #################################
 rss_items = []
