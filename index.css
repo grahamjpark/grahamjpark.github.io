@@ -111,8 +111,12 @@ hr {
 }
 
 .recent-articles h1 {
-    text-align: center;
+    text-align: left;
     padding: 40px 0 5px 0;
+}
+
+.recent-articles sup {
+    font-size: .5em;
 }
 
 .recent-articles a {
