@@ -31,4 +31,4 @@ One of the most important parts about applying to and interviewing for a positio
 # Conclusion
 That’s all I have to share for now. It’s what I found to work for me, and I wanted to share it in case it works for you. But experiment around and see what’s best for you! Best of luck with your search!
 
-Shameless plug for [Virtual Peaker’s job listings](https://www.virtual-peaker.com/talent). I love working here, and we’re working on such an impactful problem (helping utilities switch to renewable energy).
+Shameless plug for [Virtual Peaker’s job listings](https://virtual-peaker.com/company/careers/). I love working here, and we’re working on such an impactful problem (helping utilities switch to renewable energy).
