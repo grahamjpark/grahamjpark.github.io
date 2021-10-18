@@ -149,6 +149,6 @@ hr {
 @media only screen and (min-width: 556px) {
     article img {
         float: right;
-        margin: 5px 15px 10px 15px;
+        margin: 20px 15px 15px 15px;
     }
 }
