@@ -2,12 +2,21 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    flex-direction: column;
 }
 
 .post-date {
-    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-style: italic;
 }
 
 .link {
     color: #3d7c99;
+}
+
+.read-more {
+    text-align: right;
+    padding-bottom: 20px;
+    margin-top: -5px;
 }
