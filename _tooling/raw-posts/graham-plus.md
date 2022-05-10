@@ -6,4 +6,4 @@ Recently I was checking [ICANN’s list of TLDs](https://data.iana.org/TLD/tlds-
 
   
 
-After quickly throwing together a word list, I pleased to announce that Graham+ is now live: [https://graham.plus](https://graham.plus).
+After quickly throwing together a word list, I am pleased to announce that Graham+ is now live: [https://graham.plus](https://graham.plus).
