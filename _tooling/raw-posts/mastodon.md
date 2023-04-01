@@ -44,6 +44,6 @@ There are still a few drawbacks to Mastodon for me:
 - Search functionality may not be sufficient. I'm not certain on this one, but from a couple of test searches so far I could see myself finding the search functionality lacking. If this is the case, I could most likely lean on Feedbin's searching of Mastodon's RSS, but let's hope it doesn't come to that.
 - It's social. Even though I locked my profile down, a couple posts had their permissions set wrong and got promoted to others. After getting a couple like, I begin to fall back into the chasing of validation that I wanted to separate from. Even without this promotion, I still find myself wanting to write clever captions with some posts, even though I know most posts will probably go unread by anyone but me.
 
-Despite all these, I'm still pretty happy with it. I plan to continue sharing all the interesting things a come across, so feel free to check out my history, or even give me a follow:
+Despite all these, I'm still pretty happy with it. I plan to continue sharing all the interesting things I come across, so feel free to check out my history, or even give me a follow:
 
 [https://mastodon.nl/@grahamjpark](https://mastodon.nl/@grahamjpark)
