@@ -1,6 +1,6 @@
 # Creating a Static Blog Generator
 
-![](https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80)
+![](../assets/blog/laptop2.avif)
 
 
 Recently I went about revamping my personal site. After recreating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job. I'm not going to list every detail, but you can all the code [here](https://github.com/grahamjpark/grahamjpark.github.io/tree/master/tooling).

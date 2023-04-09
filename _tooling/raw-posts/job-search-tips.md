@@ -1,6 +1,6 @@
 # How to Streamline Your Job Search
 
-![](https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80)
+![](../assets/blog/laptop.avif)
 
 I officially [started my job with Virtual Peaker](https://blog.virtual-peaker.com/team-qa-graham-park) a couple of months ago. I’m fortunate to have found such a perfect fit. I know many people are looking to make the next step in their career or land their first job, so I wanted to share my tips and techniques for finding and researching job opportunities.
 

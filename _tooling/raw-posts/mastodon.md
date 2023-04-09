@@ -1,6 +1,6 @@
 # Mastodon as a Microblog
 
-![](https://images.unsplash.com/photo-1669311576866-d77abb31f4ce?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80)
+![](../assets/blog/mastodon.avif)
 
 [Mastodon](https://joinmastodon.org/) has been gaining a lot of steam lately. I don't know how many people actually migrated from Twitter to Mastodon, but there are certainly more people talking about it than a year or two ago. I personally have been hesitant to jump on board. I've wanted to love Mastodon. I love its stance on privacy, data ownership, and trying to create healthier communities, but those stances also limit its ability to replace Twitter's ease of use and discoverability. Because of this it never stuck when I tried it out. Now I'm returning to Mastodon though, not as a Twitter replacement but to fill a different use case.
 

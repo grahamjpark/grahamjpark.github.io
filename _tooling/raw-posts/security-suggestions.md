@@ -1,6 +1,6 @@
 # My security suggestions
 
-![](https://miro.medium.com/max/1920/1*HpmYbgeuahmpSnArtjw0sw.png)
+![](../assets/blog/security.png)
 
 
 I find myself recommending things to my friends a lot (sometimes it’s even because they asked me for my recommendations!), and I get a lot of enjoyment out of recommending things I love. So I decided I wanted to create a series of posts about things I like to endorse.
