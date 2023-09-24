@@ -7,10 +7,9 @@
 header {
     background-color: #2852A6;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: left;
     align-items: center;
-    height: 305px;
+    height: 60px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -19,39 +18,38 @@ header {
 .emblem {
     /* border: 1px solid red; */
     display: flex;
-    flex-direction: column;
     align-items: center;
-    padding-top: 45px;
-    padding-bottom: 35px;
+    padding: 35px 20px 35px 35px;
+    justify-content: space-around;
 }
 
 .logo {
-    margin-bottom: 5px;
+    margin-right: 20px;
 }
 
 .emblem h1 {
     font-family: 'Song Myung';
     font-style: normal;
     font-weight: normal;
-    font-size: 48px;
+    font-size: 28px;
     line-height: 60px;
     text-align: center;
     color: #FFFFFF;
-    text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 header ul {
+    /* border: 1px solid red; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-bottom: 20px;
+    align-items: baseline;
 }
 
 header li {
     display: inline-flex;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-bottom: 7px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 /* header li:first-of-type {
@@ -63,6 +61,65 @@ header li:last-of-type {
 } */
 
 header a {
+    font-family: 'Buenard', serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 305px;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+.name-picture {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 45px;
+    padding-bottom: 35px;
+}
+
+.pixel-art {
+    margin-bottom: 5px;
+}
+
+.name-picture h1 {
+    font-family: 'Song Myung';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+    color: #32383d;
+}
+
+.profile-card ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.profile-card li {
+    display: inline-flex;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 7px;
+}
+
+.profile-card a {
     font-family: 'Buenard', serif;
     font-style: normal;
     font-weight: normal;
