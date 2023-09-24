@@ -118,6 +118,15 @@ hr {
     width: 80%;
 }
 
+.email-signup {
+    width: 400px;
+    margin: 0 auto 0 auto;
+}
+
+.email-octopus-form-row-subscribe {
+    align-items: right;
+}
+
 /* Mobile Styles */
 @media only screen and (max-width: 605px) {
     .emblem h1 {
