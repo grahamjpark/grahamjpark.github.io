@@ -121,7 +121,7 @@ article {
     -moz-osx-font-smoothing: grayscale;
     font-size: 18px;
     width: 800px;
-    padding: 30px 20px 30px 20px;
+    padding: 10px 20px 30px 20px;
     color: #32383d;
 }
 
@@ -178,6 +178,10 @@ hr {
         object-fit: contain;
         margin: 5px auto 10px auto;
     }
+/* TODO: Fix spacing on mobile */
+    /* header {
+        padding: 0px;
+    } */
 }
 
 /* Desktop Styles */
