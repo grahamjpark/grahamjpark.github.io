@@ -5,6 +5,7 @@
 }
 
 header {
+    position: fixed;
     background-color: #19367e;
     display: flex;
     justify-content: space-between;
@@ -77,10 +78,11 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 275px;
+    height: 260px;
     width: 100%;
     left: 0px;
     top: 0px;
+    margin-top: 60px; /* Offset header */
 }
 
 .pixel-art {

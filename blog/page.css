@@ -6,7 +6,8 @@
 
 /* TODO: Pull header out to seperate css */
 header {
-    background-color: #d8dff0;
+    position: fixed;
+    background-color: #19367e;
     display: flex;
     justify-content: space-between;
     /* TODO: Consider using percent instead. Check on mobile */
@@ -37,7 +38,7 @@ header {
     font-size: 28px;
     line-height: 60px;
     text-align: center;
-    color: #09090a;
+    color: #f2f1ef;
 }
 
 header ul {
@@ -69,13 +70,14 @@ header a {
     font-size: 16px;
     text-align: center;
     text-decoration-line: underline;
-    color: #09090a;
+    color: #f2f1ef;
 }
 
 .article-container {
     width: 100%;
     display: flex;
     justify-content: center;
+    margin-top: 60px; /* Offset header */
 }
 
 article {
@@ -130,9 +132,9 @@ hr {
 
 /* Mobile Styles */
 @media only screen and (max-width: 605px) {
-    .emblem h1 {
+    /* .emblem h1 {
         display: none;
-    }
+    } */
     .logo {
         margin-right: 0;
     }
