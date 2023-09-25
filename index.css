@@ -5,9 +5,11 @@
 }
 
 header {
-    background-color: #2852A6;
+    background-color: #19367e;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    /* TODO: Consider using percent instead. Check on mobile */
+    padding: 0x 10px;
     align-items: center;
     height: 60px;
     width: 100%;
@@ -34,8 +36,7 @@ header {
     font-size: 28px;
     line-height: 60px;
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #f2f1ef;
 }
 
 header ul {
@@ -67,8 +68,7 @@ header a {
     font-size: 16px;
     text-align: center;
     text-decoration-line: underline;
-    color: #FFFFFF;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    color: #f2f1ef;
 }
 
 .profile-card {
@@ -77,7 +77,7 @@ header a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 305px;
+    height: 275px;
     width: 100%;
     left: 0px;
     top: 0px;
@@ -150,7 +150,7 @@ hr {
 
 .recent-articles h1 {
     text-align: left;
-    padding: 40px 0 5px 0;
+    padding: 0px 0 5px 0;
 }
 
 .recent-articles sup {

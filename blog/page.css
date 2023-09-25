@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+}   
 
+/* TODO: Pull header out to seperate css */
 header {
-    background-color: #2852A6;
+    background-color: #d8dff0;
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
+    /* TODO: Consider using percent instead. Check on mobile */
+    padding: 0x 10px;
     align-items: center;
     height: 60px;
     width: 100%;
@@ -34,8 +37,7 @@ header {
     font-size: 28px;
     line-height: 60px;
     text-align: center;
-    color: #FFFFFF;
-    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+    color: #09090a;
 }
 
 header ul {
@@ -67,8 +69,7 @@ header a {
     font-size: 16px;
     text-align: center;
     text-decoration-line: underline;
-    color: #FFFFFF;
-    text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.5);
+    color: #09090a;
 }
 
 .article-container {
