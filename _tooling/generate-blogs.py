@@ -91,7 +91,7 @@ with open('../index.html', 'w') as f:
 ################################ Update rss feed #################################
 rss_items = []
 for post in post_metadatas:
-    url = f"https://grahamjpark.com/blog/{post['filename']}"
+    url = f"https://www.prograham.nl/blog/{post['filename']}"
     rss_items.append(
         Item(
             title = post["title"],
@@ -104,15 +104,16 @@ for post in post_metadatas:
     )
 
 image = Image(
-    url = "https://grahamjpark.com/assets/gp_small_new.png",
-    title = "GP Logo",
-    link = "https://grahamjpark.com/blog/all-posts.html",
+    # TODO: Update with new logo
+    url = "https://www.prograham.nl/assets/gp_small_new.png", 
+    title = "Prograham Logo",
+    link = "https://www.prograham.nl/blog/all-posts.html",
 )
 
 feed = Feed(
-    title = "Graham Park's Blog",
-    link = "https://grahamjpark.com/blog/rss.xml",
-    description = "Writings from Graham about whatever happens to be on his mind",
+    title = "Prograham Blog",
+    link = "https://prograham.nl/blog/rss.xml",
+    description = "Writings from Graham Park",
     language = "en-US",
     lastBuildDate = datetime.datetime.now(),
     items = rss_items,
