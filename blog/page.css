@@ -145,6 +145,9 @@ hr {
     /* .emblem h1 {
         display: none;
     } */
+    .emblem {
+        padding: 35px 20px 35px 20px;
+    }
     .logo {
         margin-right: 0;
     }

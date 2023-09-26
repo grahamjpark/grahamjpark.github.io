@@ -196,10 +196,9 @@ hr {
         object-fit: contain;
         margin: 5px auto 10px auto;
     }
-/* TODO: Fix spacing on mobile */
-    /* header {
-        padding: 0px;
-    } */
+    .emblem {
+        padding: 35px 20px 35px 20px;
+    }
 }
 
 /* Desktop Styles */
