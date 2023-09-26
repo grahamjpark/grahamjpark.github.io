@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: "PT Sans";
+    src: url('/assets/PTSans-Regular.ttf') format('truetype');
+}
 
 @font-face {
     font-family: "Handjet";
@@ -80,7 +84,7 @@ header li:last-of-type {
 } */
 
 header a {
-    font-family: 'Buenard', serif;
+    font-family: sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
