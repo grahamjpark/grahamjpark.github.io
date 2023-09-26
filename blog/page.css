@@ -2,7 +2,23 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}   
+}
+
+
+@font-face {
+    font-family: "Handjet";
+    src: url('/assets/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "ChakraPetch";
+    src: url('/assets/ChakraPetch-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "Dosis";
+    src: url('/assets/Dosis-VariableFont_wght.ttf') format('truetype');
+}
 
 /* TODO: Pull header out to seperate css */
 header {
@@ -32,10 +48,10 @@ header {
 }
 
 .emblem h1 {
-    font-family: 'Song Myung';
+    font-family: 'Handjet';
     font-style: normal;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 35px;
     line-height: 60px;
     text-align: center;
     color: #f2f1ef;
@@ -82,7 +98,7 @@ header a {
 
 article {
     overflow: auto;
-    font-family: 'Buenard', serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
@@ -95,12 +111,13 @@ article {
 
 article p {
     padding-bottom: 15px;
-    font-family: 'PT Sans', serif;
 }
 
 article h1:first-of-type {
     /* padding: 30px 0 0 0; */
-    font-size: 40px;
+    font-size: 50px;
+    font-family: 'ChakraPetch', 'Handjet', sans-serif;
+    font-weight: normal;
 }
 
 article h1:not(first-of-type) {
