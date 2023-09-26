@@ -30,6 +30,7 @@
     <div class="article-container">
         <article>
             <h1 class="title">All Posts</h1>
+            {% set include_preview = false %}
             {% for post in posts %}
                 {% with post=post %}
                     {% include 'post_snippet.jinja2.html'%}

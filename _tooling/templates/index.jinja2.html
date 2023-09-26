@@ -43,6 +43,7 @@
         <article>
             <div class="recent-articles">
                 <h1 onclick="location.href='/blog/all-posts.html';" style="cursor: pointer;">Recent Posts</h1>
+                {% set include_preview = true %}
                 {% for post in posts %}
                 {% with post=post %}
                 {% include 'post_snippet.jinja2.html'%}
