@@ -10,6 +10,11 @@
 }
 
 @font-face {
+    font-family: "Mulish";
+    src: url('/assets/Mulish-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face {
     font-family: "Handjet";
     src: url('/assets/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
 }
@@ -74,7 +79,7 @@ header li:last-of-type {
 } */
 
 header a {
-	font-family: "PT Sans", sans-serif;
+	font-family: "Mulish", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
@@ -92,7 +97,7 @@ header a {
 
 article {
     overflow: auto;
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Mulish', sans-serif;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
