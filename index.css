@@ -14,16 +14,6 @@
     src: url('/assets/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: "ChakraPetch";
-    src: url('/assets/ChakraPetch-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url('/assets/Dosis-VariableFont_wght.ttf') format('truetype');
-}
-
 header {
     position: fixed;
     background-color: #19367e;
@@ -139,7 +129,7 @@ header a {
 }
 
 article {
-    font-family: 'ChakraPetch', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
@@ -152,7 +142,6 @@ article {
 
 article p {
     padding-bottom: 15px;
-    font-family: 'PT Sans', sans-serif;
 }
 
 article h1 {

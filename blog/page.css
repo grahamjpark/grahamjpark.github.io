@@ -14,16 +14,6 @@
     src: url('/assets/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
 }
 
-@font-face {
-    font-family: "ChakraPetch";
-    src: url('/assets/ChakraPetch-Regular.ttf') format('truetype');
-}
-
-@font-face {
-    font-family: "Dosis";
-    src: url('/assets/Dosis-VariableFont_wght.ttf') format('truetype');
-}
-
 /* TODO: Pull header out to seperate css */
 header {
     position: fixed;
@@ -120,7 +110,6 @@ article p {
 article h1:first-of-type {
     /* padding: 30px 0 0 0; */
     font-size: 50px;
-    font-family: 'ChakraPetch', 'Handjet', sans-serif;
     font-weight: normal;
 }
 
