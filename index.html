@@ -35,13 +35,22 @@
     </header>
 
     <div class="profile-card">
-        <img class="pixel-art" title="" src="./assets/me-circle-small.png" height="115" width="115">
+        <img class="pixel-art" title="" src="./assets/placeholder.webp" height="115" width="115">
         <p>Nobis quia praesentium consequatur distinctio</p>
         <ul class="socials">
-            <li><img title="" src="./assets/logo-gitlab.svg" height="25" width="25"></li>
-            <li><img title="" src="./assets/logo-linkedin.svg" height="25" width="25"></li>
-            <li><img title="" src="./assets/logo-mastodon.svg" height="25" width="25"></li>
-            <li><img title="" src="./assets/logo-rss.svg" height="25" width="25"></li>
+            <li><a href="https://github.com/grahamjpark" target="_blank" onclick="sa_event('header_outbound_github.com');">
+                <img title="" src="./assets/logo-github.svg" height="25" width="25">
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/grahamjpark/" target="_blank" onclick="sa_event('header_outbound_linkedin.com');">
+                <img title="" src="./assets/logo-linkedin.svg" height="25" width="25">
+            </a></li>
+            <li><a href="https://mastodon.nl/@prograham" target="_blank" onclick="sa_event('header_outbound_mastodon.nl');">
+                <img title="" src="./assets/logo-mastodon.svg" height="25" width="25">
+            </a></li>
+            <li><input type="image" src="./assets/balloon.svg" name=""id="balloonButton" height="25" width="25"/></li>
+            <li><a href="/blog/rss.xml" target="_blank" onclick="sa_event('header_outbound_rss');">
+                <img title="" src="./assets/logo-rss.svg" height="25" width="25">
+            </a></li>
             <!-- <li><img title="" src="./assets/logo-book.svg" height="20" width="20"></li> -->
         </ul>
     </div>
@@ -103,8 +112,19 @@
             </div>
         </article>
         <a rel="me" href="https://mastodon.nl/@grahamjpark"></a>
+        <a rel="me" href="https://mastodon.nl/@prograham"></a>
         <a rel="me" href="https://mastodon.social/@grahamjpark"></a>
+        <a rel="me" href="https://mastodon.social/@prograham"></a>
     </div>
+    <script>
+        document.getElementById("balloonButton").addEventListener("click", function () {
+            confetti.start();
+            setTimeout(function () {
+                confetti.stop();
+            }, 3000);
+        });
+    </script>
+    <script src="confetti.js"></script>
 </body>
 
 </html>
