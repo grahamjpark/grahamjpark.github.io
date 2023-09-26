@@ -84,13 +84,13 @@ header li:last-of-type {
 } */
 
 header a {
-    font-family: sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    text-align: center;
-    text-decoration-line: underline;
-    color: #f2f1ef;
+	font-family: "PT Sans", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	text-align: center;
+	text-decoration-line: underline;
+	color: #f2f1ef;
 }
 
 .article-container {
