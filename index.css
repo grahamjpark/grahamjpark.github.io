@@ -105,6 +105,11 @@ header a {
     margin-top: 60px; /* Offset header */
 }
 
+.profile-card p {
+	font-family: "PT Sans", sans-serif;
+    font-size: 17px;
+}
+
 .pixel-art {
     margin-bottom: 15px;
 }
