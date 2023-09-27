@@ -95,6 +95,13 @@ header a {
     padding-bottom: 7px;
 }
 
+.email-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 .article-container {
     width: 100%;
     display: flex;
