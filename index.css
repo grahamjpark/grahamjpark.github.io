@@ -102,8 +102,14 @@ header a {
 
 .pixel-art {
     margin-bottom: 15px;
-}
 
+    width: 130px;
+    height: 128px;
+    border-radius: 50%;
+    background-color: #beccf0b6;
+    display: inline-block; /* Ensure the circular background doesn't extend beyond the image */
+    overflow: hidden; /* Clip any content that overflows the circular shape */
+  }
 .socials {
     margin-top: 10px;
 }
