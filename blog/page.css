@@ -5,13 +5,25 @@
 }
 
 @font-face {
-    font-family: "Mulish";
-    src: url('/assets/Mulish-VariableFont_wght.ttf') format('truetype');
+    font-family: "SourceSansPro";
+    font-style: italic;
+    src: url('/assets/fonts/SourceSansPro-Italic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    font-weight: bold;
+    src: url('/assets/fonts/SourceSansPro-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: "SourceSansPro";
+    src: url('/assets/fonts/SourceSansPro-Regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: "Handjet";
-    src: url('/assets/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
+    src: url('/assets/fonts/Handjet-VariableFont_ELGR\,ELSH\,wght.ttf') format('truetype');
 }
 
 /* TODO: Pull header out to seperate css */
@@ -66,7 +78,7 @@ header li {
 }
 
 header a {
-	font-family: "Mulish", sans-serif;
+	font-family: "SourceSansPro", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 15px;
@@ -111,7 +123,7 @@ header a {
 
 article {
     overflow: auto;
-    font-family: 'Mulish', sans-serif;
+    font-family: 'SourceSansPro', sans-serif;
     font-style: normal;
     font-weight: normal;
     -webkit-font-smoothing: antialiased;
