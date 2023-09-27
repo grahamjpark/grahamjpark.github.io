@@ -56,13 +56,18 @@
     <!-- <li><img title="" src="/assets/logo-book.svg" height="20" width="20"></li> -->
 </ul>
 <script>
+    let confettiTimeout;
     document.getElementById("balloonButton").addEventListener("click", function () {
+        if (confettiTimeout) {
+            clearTimeout(confettiTimeout); // Clear the previous timeout
+        }
         confetti.start();
-        setTimeout(function () {
+        confettiTimeout = setTimeout(function () {
             confetti.stop();
         }, 3000);
     });
 </script>
+
 <script src="/confetti.js"></script>
     </div>
     <div class="article-container">
