@@ -110,8 +110,10 @@ header a {
     display: inline-block; /* Ensure the circular background doesn't extend beyond the image */
     overflow: hidden; /* Clip any content that overflows the circular shape */
   }
+
 .socials {
     margin-top: 10px;
+    text-align: center;
 }
 
 .socials ul {

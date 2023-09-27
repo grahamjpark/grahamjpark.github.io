@@ -35,11 +35,7 @@
     </div>
     <div class="article-container">
         <article>
-            <p style="text-align: center;">Follow me on  
-                <a href='https://mastodon.social/@grahamjpark' target="_blank"
-                onclick="sa_event('outbound_subscribe_mastodon');">Mastodon</a>,
-                <a href='/blog/rss.xml' target="_blank"
-                onclick="sa_event('outbound_subscribe_rss');">RSS</a>, or via email:</p>
+            <p style="text-align: center;">Let's keep in touch!</p>
             <div class="email-signup">
                 <link rel="stylesheet" href="https://emailoctopus.com/bundles/emailoctopuslist/css/formEmbed.css">
                 <div class="email-octopus-form-wrapper">
@@ -71,6 +67,7 @@
             </div>
         </article>
     </div>
+    {% include 'socials.jinja2.html' %}
     <script>
         (function createEvents() {
             var outbound_links = {}
@@ -95,5 +92,4 @@
         })();
     </script>
 </body>
-
 </html>
