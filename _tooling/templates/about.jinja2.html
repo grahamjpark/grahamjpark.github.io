@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>All Posts - prograham by Graham Park</title>
+    <link rel='stylesheet' href='about.css' />
+    <link rel='stylesheet' href='./blog/page.css' />
+    <link rel='stylesheet' href='./blog/all-posts.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+</head>
+
+<body>
+    {% include 'header.jinja2.html' %}
+    <div class="article-container">
+        <article>
+            <h1 class="title" style="font-family: 'Handjet', sans-serif;" >About</h1>
+            <img class="pixel-art" alt="Graham Park Pixel Art" title="" src="/assets/graham-park-pixel-art.png">
+            <p>Prograham is the work of Graham Park. Graham is a software engineer based out of Amsterdam, Netherlands. If you wish to learn more, please check out the social links below.</p>
+            <!-- <p>Prograham is created and maintained by Graham Park. Graham is a software engineer based out of Amsterdam, Netherlands. If you wish to know more about me, please see my service announce in my blog post</p> -->
+        </article>
+    </div>
+    {% include 'socials.jinja2.html' %}
+</body>
+
+</html>
