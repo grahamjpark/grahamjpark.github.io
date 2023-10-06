@@ -136,6 +136,7 @@ article {
 
 article p {
     padding-bottom: 15px;
+    line-height: 1.5;
 }
 
 article h1:first-of-type {
