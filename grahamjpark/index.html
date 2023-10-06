@@ -1,9 +1,36 @@
-<ul class="socials">
-    {% if is_grahamjpark %}
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Graham Park</title>
+    <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='/blog/post-snippet.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+</head>
+<body>
+    <div class="profile-card">
+        <img class="pixel-art" alt="Graham Park Logo" title="" src="./me-circle-small.png">
+        <h1>Graham Park</h1>
+        <p>Software Enginer based in Amsterdam, Netherlands</p>
+        
+        <ul class="socials">
+    
     <li><a href="https://www.prograham.nl" target="_blank" onclick="sa_event('header_outbound_prograham.nl');">
         <img title="" src="/assets/newspaper.svg" height="25" width="25">
     </a></li>
-    {% endif %}
+    
     <li><a href="https://mastodon.nl/@prograham" target="_blank" onclick="sa_event('header_outbound_mastodon.nl');">
         <img title="" src="/assets/logo-mastodon.svg" height="25" width="25">
     </a></li>
@@ -14,11 +41,7 @@
         <img title="" src="/assets/logo-github.svg" height="25" width="25">
     </a></li>
     <li><input type="image" src="/assets/balloon.svg" name=""id="balloonButton" height="25" width="25"/></li>
-    {% if not is_grahamjpark %}
-    <li><a href="/feed" target="_blank" onclick="sa_event('header_outbound_rss');">
-        <img title="" src="/assets/logo-rss.svg" height="25" width="25">
-    </a></li>
-    {% endif %}
+    
     <!-- <li><img title="" src="/assets/logo-book.svg" height="20" width="20"></li> -->
 </ul>
 <script>
@@ -35,3 +58,7 @@
 </script>
 
 <script src="/confetti.js"></script>
+    </div>
+</body>
+
+</html>

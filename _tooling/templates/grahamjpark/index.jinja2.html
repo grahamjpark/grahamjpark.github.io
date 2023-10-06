@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>Graham Park</title>
+    <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='/blog/post-snippet.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+</head>
+<body>
+    <div class="profile-card">
+        <img class="pixel-art" alt="Graham Park Logo" title="" src="./me-circle-small.png">
+        <h1>Graham Park</h1>
+        <p>Software Enginer based in Amsterdam, Netherlands</p>
+        {% set is_grahamjpark = true %}
+        {% include 'socials.jinja2.html' %}
+    </div>
+</body>
+
+</html>

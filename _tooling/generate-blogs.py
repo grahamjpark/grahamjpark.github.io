@@ -120,9 +120,6 @@ feed = Feed(
     image = image
 )
 
-with open('../blog/rss.xml', 'w') as f:
-    f.write(feed.rss())
-
 with open('../feed', 'w') as f:
     f.write(feed.rss())
 
@@ -131,3 +128,15 @@ about_template_file = "about.jinja2.html"
 about_template = template_env.get_template(about_template_file)
 with open('../about.html', 'w') as f:
     f.write(about_template.render())
+
+############################# Re-render static pages #############################
+index_template_file = "./grahamjpark/index.jinja2.html"
+index_template = template_env.get_template(index_template_file)
+with open('../grahamjpark/index.html', 'w') as f:
+    f.write(index_template.render(posts=post_metadatas[:3]))
+
+with open('../grahamjpark/blog/rss.xml', 'w') as f:
+    f.write(feed.rss())
+
+with open('../grahamjpark/feed', 'w') as f:
+    f.write(feed.rss())

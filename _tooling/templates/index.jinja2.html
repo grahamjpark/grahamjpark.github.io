@@ -27,12 +27,13 @@
     <div class="profile-card">
         <img class="pixel-art" alt="Graham Park Pixel Art" title="" src="/assets/graham-park-pixel-art.png">
         <p>Just me being a professional Graham</p>
+        {% set is_grahamjpark = false %}
         {% include 'socials.jinja2.html' %}
     </div>
     <div class="article-container">
         <article>
             <div class="recent-articles">
-                <h1 onclick="location.href='/blog/all-posts.html';" style="cursor: pointer;">Recent Posts</h1>
+                <h1>Recent Posts</h1>
                 {% set include_preview = true %}
                 {% for post in posts %}
                 {% with post=post %}
