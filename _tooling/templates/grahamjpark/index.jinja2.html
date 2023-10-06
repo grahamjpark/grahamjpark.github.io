@@ -3,10 +3,9 @@
 
 <head>
     <meta charset='UTF-8' />
-    <title>All Posts - prograham by Graham Park</title>
-    <link rel='stylesheet' href='page.css' />
-    <link rel='stylesheet' href='all-posts.css' />
-    <link rel='stylesheet' href='post-snippet.css' />
+    <title>Graham Park</title>
+    <link rel='stylesheet' href='index.css' />
+    <link rel='stylesheet' href='/blog/post-snippet.css' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -20,19 +19,13 @@
     </script>
     <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
 </head>
-
 <body>
-    {% include 'header.jinja2.html' %}
-    <div class="article-container">
-        <article>
-            <h1 class="title" style="font-family: 'Handjet', sans-serif;" >All Posts</h1>
-            {% set include_preview = false %}
-            {% for post in posts %}
-                {% with post=post %}
-                    {% include 'post_snippet.jinja2.html'%}
-                {% endwith %}
-            {% endfor %}
-        </article>
+    <div class="profile-card">
+        <img class="pixel-art" alt="Graham Park Logo" title="" src="./me-circle-small.png">
+        <h1>Graham Park</h1>
+        <p>Software Enginer based in Amsterdam, Netherlands</p>
+        {% set is_grahamjpark = true %}
+        {% include 'socials.jinja2.html' %}
     </div>
 </body>
 

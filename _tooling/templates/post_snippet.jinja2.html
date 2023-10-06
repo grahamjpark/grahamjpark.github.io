@@ -5,7 +5,9 @@
             </a>
             <p class="post-date">{{ post["date"] }}</p>
         </div>
-        <p>{{ post["snippet"][:240] }}...</p>
+        {% if include_preview %}
+        <p>{{ post["snippet"][:250] }}...</p>
         <a href='/blog/{{ filename }}'>
             <p class='read-more link'>Read More →</p>
         </a>
+        {% endif %}

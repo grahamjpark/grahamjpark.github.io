@@ -4,9 +4,9 @@
 <head>
     <meta charset='UTF-8' />
     <title>All Posts - prograham by Graham Park</title>
-    <link rel='stylesheet' href='page.css' />
-    <link rel='stylesheet' href='all-posts.css' />
-    <link rel='stylesheet' href='post-snippet.css' />
+    <link rel='stylesheet' href='about.css' />
+    <link rel='stylesheet' href='./blog/page.css' />
+    <link rel='stylesheet' href='./blog/all-posts.css' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -25,15 +25,14 @@
     {% include 'header.jinja2.html' %}
     <div class="article-container">
         <article>
-            <h1 class="title" style="font-family: 'Handjet', sans-serif;" >All Posts</h1>
-            {% set include_preview = false %}
-            {% for post in posts %}
-                {% with post=post %}
-                    {% include 'post_snippet.jinja2.html'%}
-                {% endwith %}
-            {% endfor %}
+            <h1 class="title" style="font-family: 'Handjet', sans-serif;" >About</h1>
+            <img class="pixel-art" alt="Graham Park Pixel Art" title="" src="/assets/graham-park-pixel-art.png">
+            <p>👋  Hi! I'm Graham Park. I am a software engineer based out of Amsterdam, Netherlands. If you wish to learn more, please check out my social links below.</p>
+            <!-- <p>Prograham is created and maintained by Graham Park. Graham is a software engineer based out of Amsterdam, Netherlands. If you wish to know more about me, please see my service announce in my blog post</p> -->
         </article>
     </div>
+    {% set is_grahamjpark = false %}
+    {% include 'socials.jinja2.html' %}
 </body>
 
 </html>

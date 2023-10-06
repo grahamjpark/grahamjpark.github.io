@@ -4,9 +4,21 @@
     padding: 0 0 20px 0;
 }
 
+.pixel-art {
+    margin-bottom: 15px;
+    width: 80px;
+    height: 79px;
+    border-radius: 50%;
+    background-color: #beccf0b6;
+    display: inline-block; /* Ensure the circular background doesn't extend beyond the image */
+    overflow: hidden; /* Clip any content that overflows the circular shape */
+    justify-content: center;
+    display: flex;
+  }
+
 article li {
     margin: 0 10px 10px 30px;
-    font-family: 'PT Sans', serif;
+    font-family: 'SourceSansPro', serif;
 }
 
 pre code {

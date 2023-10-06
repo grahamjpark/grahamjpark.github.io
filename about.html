@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8' />
+    <title>All Posts - prograham by Graham Park</title>
+    <link rel='stylesheet' href='about.css' />
+    <link rel='stylesheet' href='./blog/page.css' />
+    <link rel='stylesheet' href='./blog/all-posts.css' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <script>
+        window.sa_event = window.sa_event || function () {
+            a = [].slice.call(arguments);
+            sa_event.q ? sa_event.q.push(a) : sa_event.q = [a]
+        };
+    </script>
+    <script data-skip-dnt="true" async defer src="https://park.grahamjpark.com/latest.js"></script>
+</head>
+
+<body>
+        <header>
+        <div class="emblem">
+            <a href="/">
+                <img class="logo" title="" src="/assets/logo.png" width="170">
+            </a>
+            <!-- <h1>prograham.nl</h1> -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href='/about.html'>About</a></li>
+                <li><a href='/blog/all-posts.html'>All Posts</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="article-container">
+        <article>
+            <h1 class="title" style="font-family: 'Handjet', sans-serif;" >About</h1>
+            <img class="pixel-art" alt="Graham Park Pixel Art" title="" src="/assets/graham-park-pixel-art.png">
+            <p>👋  Hi! I'm Graham Park. I am a software engineer based out of Amsterdam, Netherlands. If you wish to learn more, please check out my social links below.</p>
+            <!-- <p>Prograham is created and maintained by Graham Park. Graham is a software engineer based out of Amsterdam, Netherlands. If you wish to know more about me, please see my service announce in my blog post</p> -->
+        </article>
+    </div>
+    
+    <ul class="socials">
+    
+    <li><a href="https://mastodon.nl/@prograham" target="_blank" onclick="sa_event('header_outbound_mastodon.nl');">
+        <img title="" src="/assets/logo-mastodon.svg" height="25" width="25">
+    </a></li>
+    <li><a href="https://www.linkedin.com/in/grahamjpark/" target="_blank" onclick="sa_event('header_outbound_linkedin.com');">
+        <img title="" src="/assets/logo-linkedin.svg" height="25" width="25">
+    </a></li>
+    <li><a href="https://github.com/grahamjpark" target="_blank" onclick="sa_event('header_outbound_github.com');">
+        <img title="" src="/assets/logo-github.svg" height="25" width="25">
+    </a></li>
+    <li><input type="image" src="/assets/balloon.svg" name=""id="balloonButton" height="25" width="25"/></li>
+    
+    <li><a href="/feed" target="_blank" onclick="sa_event('header_outbound_rss');">
+        <img title="" src="/assets/logo-rss.svg" height="25" width="25">
+    </a></li>
+    
+    <!-- <li><img title="" src="/assets/logo-book.svg" height="20" width="20"></li> -->
+</ul>
+<script>
+    let confettiTimeout;
+    document.getElementById("balloonButton").addEventListener("click", function () {
+        if (confettiTimeout) {
+            clearTimeout(confettiTimeout); // Clear the previous timeout
+        }
+        confetti.start();
+        confettiTimeout = setTimeout(function () {
+            confetti.stop();
+        }, 3000);
+    });
+</script>
+
+<script src="/confetti.js"></script>
+</body>
+
+</html>

@@ -3,14 +3,11 @@
 
 <head>
     <meta charset='UTF-8' />
-    <title>Graham Park</title>
+    <title>prograham by Graham Park</title>
     <link rel='stylesheet' href='index.css' />
     <link rel='stylesheet' href='/blog/post-snippet.css' />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Song+Myung">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Buenard">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Crimson+Pro">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans">
+    <!-- TODO: Remove icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -25,38 +22,64 @@
 </head>
 
 <body>
-    <header>
+        <header>
         <div class="emblem">
-            <img class="logo" title="" src="./assets/gp_small_new.png" height="106" width="115">
-            <h1>Graham Park</h1>
+            <a href="/">
+                <img class="logo" title="" src="/assets/logo.png" width="170">
+            </a>
+            <!-- <h1>prograham.nl</h1> -->
         </div>
         <nav>
             <ul>
-                <li><a href='https://www.linkedin.com/in/grahamjpark/' target="_blank"
-                        onclick="sa_event('header_outbound_linkedin.com');">LinkedIn</a></li>
-                <li><a href='https://github.com/grahamjpark' target="_blank"
-                        onclick="sa_event('header_outbound_github.com');">Github</a></li>
-                <li><a href='/blog/all-posts.html' target="_blank"
-                        onclick="sa_event('header_outbound_blog');">Blog</a></li>
-                <li><a href='https://grahamtries.art/' target="_blank"
-                        onclick="sa_event('header_outbound_park.art');">Art</a></li>
-                <!-- <li><a href='https://app.thestorygraph.com/profile/grahamjpark' target="_blank"
-                        onclick="sa_event('header_outbound_thestorygraph.com');">Bookshelf</a></li> -->
-                <!-- <li><a href='http://www.park.photography/Graham' target="_blank"
-                        onclick="sa_event('header_outbound_park.photography');">Photography</a></li> -->
+                <li><a href='/about.html'>About</a></li>
+                <li><a href='/blog/all-posts.html'>All Posts</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="profile-card">
+        <img class="pixel-art" alt="Graham Park Pixel Art" title="" src="/assets/graham-park-pixel-art.png">
+        <p>Just me being a professional Graham</p>
+        
+        <ul class="socials">
+    
+    <li><a href="https://mastodon.nl/@prograham" target="_blank" onclick="sa_event('header_outbound_mastodon.nl');">
+        <img title="" src="/assets/logo-mastodon.svg" height="25" width="25">
+    </a></li>
+    <li><a href="https://www.linkedin.com/in/grahamjpark/" target="_blank" onclick="sa_event('header_outbound_linkedin.com');">
+        <img title="" src="/assets/logo-linkedin.svg" height="25" width="25">
+    </a></li>
+    <li><a href="https://github.com/grahamjpark" target="_blank" onclick="sa_event('header_outbound_github.com');">
+        <img title="" src="/assets/logo-github.svg" height="25" width="25">
+    </a></li>
+    <li><input type="image" src="/assets/balloon.svg" name=""id="balloonButton" height="25" width="25"/></li>
+    
+    <li><a href="/feed" target="_blank" onclick="sa_event('header_outbound_rss');">
+        <img title="" src="/assets/logo-rss.svg" height="25" width="25">
+    </a></li>
+    
+    <!-- <li><img title="" src="/assets/logo-book.svg" height="20" width="20"></li> -->
+</ul>
+<script>
+    let confettiTimeout;
+    document.getElementById("balloonButton").addEventListener("click", function () {
+        if (confettiTimeout) {
+            clearTimeout(confettiTimeout); // Clear the previous timeout
+        }
+        confetti.start();
+        confettiTimeout = setTimeout(function () {
+            confetti.stop();
+        }, 3000);
+    });
+</script>
+
+<script src="/confetti.js"></script>
+    </div>
     <div class="article-container">
         <article>
-            <div class="about-me">
-                <img title="" src="./assets/me-circle-small.png" height="220" width="220">
-                <h1>About Me</h1>
-                <p>Originally from Santa Claus, Indiana (yes, it's a real place 🎅). I now live in Amsterdam, Netherlands and work for Booking.com as a software engineer.</p>
-                <p>I love collaborating with great people to solve impactful problems. Currently, that looks like building software to help more people experience the world. I'm also trying to express more creativy, so check out my Art link above.</p>
-            </div>
             <div class="recent-articles">
-                <h1 onclick="location.href='/blog/all-posts.html';" style="cursor: pointer;">Recent Posts</h1>
+                <h1>Recent Posts</h1>
+                
                 
                 
                         
@@ -66,10 +89,12 @@
             </a>
             <p class="post-date">April 01, 2023</p>
         </div>
-        <p>Mastodon has been gaining a lot of steam lately. I don't know how many people actually migrated from Twitter to Mastodon, but there are certainly more people talking about it than a year or two ago. I personally have been hesitant to jump o...</p>
+        
+        <p>Mastodon has been gaining a lot of steam lately. I don't know how many people actually migrated from Twitter to Mastodon, but there are certainly more people talking about it than a year or two ago. I personally have been hesitant to jump on board. I...</p>
         <a href='/blog/mastodon.html'>
             <p class='read-more link'>Read More →</p>
         </a>
+        
                 
                 
                 
@@ -80,10 +105,12 @@
             </a>
             <p class="post-date">August 07, 2020</p>
         </div>
-        <p>I officially started my job with Virtual Peaker a couple of months ago. I’m fortunate to have found such a perfect fit. I know many people are looking to make the next step in their career or land their first job, so I wanted to share my ti...</p>
+        
+        <p>I officially started my job with Virtual Peaker a couple of months ago. I’m fortunate to have found such a perfect fit. I know many people are looking to make the next step in their career or land their first job, so I wanted to share my tips and tec...</p>
         <a href='/blog/job-search-tips.html'>
             <p class='read-more link'>Read More →</p>
         </a>
+        
                 
                 
                 
@@ -94,16 +121,21 @@
             </a>
             <p class="post-date">June 07, 2020</p>
         </div>
-        <p>Recently I went about revamping my personal site. After recreating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job. I'...</p>
+        
+        <p>Recently I went about revamping my personal site. After recreating my homepage, I decided I wanted to add a blog to it. Below you’ll find an overview of my approach and an explanation of how I created a short python script to do the job. I'm not goin...</p>
         <a href='/blog/site-generator.html'>
             <p class='read-more link'>Read More →</p>
         </a>
+        
                 
                 
                 <a class="all-posts" href='/blog/all-posts.html'>All Posts →</a>
             </div>
         </article>
         <a rel="me" href="https://mastodon.nl/@grahamjpark"></a>
+        <a rel="me" href="https://mastodon.nl/@prograham"></a>
+        <a rel="me" href="https://mastodon.social/@grahamjpark"></a>
+        <a rel="me" href="https://mastodon.social/@prograham"></a>
     </div>
 </body>
 

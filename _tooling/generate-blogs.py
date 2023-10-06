@@ -91,7 +91,7 @@ with open('../index.html', 'w') as f:
 ################################ Update rss feed #################################
 rss_items = []
 for post in post_metadatas:
-    url = f"https://grahamjpark.com/blog/{post['filename']}"
+    url = f"https://www.prograham.nl/blog/{post['filename']}"
     rss_items.append(
         Item(
             title = post["title"],
@@ -104,29 +104,39 @@ for post in post_metadatas:
     )
 
 image = Image(
-    url = "https://grahamjpark.com/assets/gp_small_new.png",
-    title = "GP Logo",
-    link = "https://grahamjpark.com/blog/all-posts.html",
+    # TODO: Update with new logo
+    url = "https://www.prograham.nl/assets/gp_small_new.png", 
+    title = "Prograham Logo",
+    link = "https://www.prograham.nl/blog/all-posts.html",
 )
 
 feed = Feed(
-    title = "Graham Park's Blog",
-    link = "https://grahamjpark.com/blog/rss.xml",
-    description = "Writings from Graham about whatever happens to be on his mind",
+    title = "Prograham Blog",
+    link = "https://prograham.nl/blog/rss.xml",
+    description = "Writings from Graham Park",
     language = "en-US",
     lastBuildDate = datetime.datetime.now(),
     items = rss_items,
     image = image
 )
 
-with open('../blog/rss.xml', 'w') as f:
-    f.write(feed.rss())
-
 with open('../feed', 'w') as f:
     f.write(feed.rss())
 
 ############################# Re-render static pages #############################
-# subscribe_template_file = "subscribe.jinja2.html"
-# subscribe_template = template_env.get_template(subscribe_template_file)
-# with open('../blog/subscribe.html', 'w') as f:
-#     f.write(subscribe_template.render())
+about_template_file = "about.jinja2.html"
+about_template = template_env.get_template(about_template_file)
+with open('../about.html', 'w') as f:
+    f.write(about_template.render())
+
+############################# Re-render static pages #############################
+index_template_file = "./grahamjpark/index.jinja2.html"
+index_template = template_env.get_template(index_template_file)
+with open('../grahamjpark/index.html', 'w') as f:
+    f.write(index_template.render(posts=post_metadatas[:3]))
+
+with open('../grahamjpark/blog/rss.xml', 'w') as f:
+    f.write(feed.rss())
+
+with open('../grahamjpark/feed', 'w') as f:
+    f.write(feed.rss())
